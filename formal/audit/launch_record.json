@@ -1,0 +1,1 @@
+{"authorization":"用户明确启动正式实验，不加随机对照组","scientific_version":"formal-prep-20261108-v1","audit_addendum":"launch_audited.py 仅归档 HTTP 请求体及完整响应，不保存鉴权头，不改变冻结 runner 或请求参数","random_control":false,"configured_size":"1024x1024","wire_size_parameter":null,"size_note":"Gemini 绘图请求未发送尺寸参数，实际尺寸以图片解码为准"}

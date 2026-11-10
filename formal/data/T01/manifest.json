@@ -1,0 +1,190 @@
+{
+  "task_id": "T01",
+  "dataset": "formal",
+  "fixed_version": "formal-prep-20261108-v1",
+  "mock": false,
+  "started_at": 1794136561.4438112,
+  "draw_model": "gemini-3.1-flash-image",
+  "branches": {
+    "gpt": {
+      "model": "gpt-6-sol",
+      "feedback_metadata": {
+        "model": "gpt-6-sol",
+        "usage": {
+          "completion_tokens": 1181,
+          "total_tokens": 17274,
+          "prompt_tokens": 16093,
+          "prompt_tokens_details": {
+            "cached_tokens": 11444
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 331
+          }
+        },
+        "raw_response": "{\"checks\":[{\"id\":\"C1\",\"status\":\"pass\",\"evidence\":\"画面为明显的横向构图。\"},{\"id\":\"C2\",\"status\":\"pass\",\"evidence\":\"三本书下方的窗台为木质，具有清晰木纹。\"},{\"id\":\"C3\",\"status\":\"pass\",\"evidence\":\"画面中恰好有三本合上的书。\"},{\"id\":\"C4\",\"status\":\"pass\",\"evidence\":\"左侧书籍为蓝色。\"},{\"id\":\"C5\",\"status\":\"pass\",\"evidence\":\"中间书籍为绿色。\"},{\"id\":\"C6\",\"status\":\"pass\",\"evidence\":\"右侧书籍为红色。\"},{\"id\":\"C7\",\"status\":\"pass\",\"evidence\":\"一盆小型绿植位于三本书后方。\"},{\"id\":\"C8\",\"status\":\"pass\",\"evidence\":\"主体后方为浅灰色区域，右上方有大面积留白；书封上的图案和徽章不构成可读文字。\"}],\"priority_fixes\":[],\"revised_prompt\":\"生成一张横向书店橱窗宣传配图。木质窗台上恰好摆放三本合上的书：左边蓝色，中间绿色，右边红色；书后方是一盆小型绿植。背景为浅灰色，画面右上方留白用于后续添加标题。不要出现可读文字。\"}"
+      },
+      "feedback_latency_seconds": 22.29,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1346,
+          "promptTokenCount": 68,
+          "totalTokenCount": 1414
+        },
+        "actual_size": [
+          1376,
+          768
+        ]
+      },
+      "draw_latency_seconds": 13.68
+    },
+    "gemini": {
+      "model": "gemini-3.8-flash",
+      "feedback_metadata": {
+        "model": "gemini-3.8-flash",
+        "usage": {
+          "candidatesTokenCount": 381,
+          "promptTokenCount": 1396,
+          "thoughtsTokenCount": 189,
+          "totalTokenCount": 1966
+        },
+        "raw_response": "```json\n{\n  \"checks\": [\n    {\"id\": \"C1\", \"status\": \"pass\", \"evidence\": \"横向宽幅画面。\"},\n    {\"id\": \"C2\", \"status\": \"pass\", \"evidence\": \"展示面为清晰的木质窗台结构。\"},\n    {\"id\": \"C3\", \"status\": \"pass\", \"evidence\": \"画面内只有三本整齐摆放的合闭书籍。\"},\n    {\"id\": \"C4\", \"status\": \"pass\", \"evidence\": \"最左侧是一本蓝色书。\"},\n    {\"id\": \"C5\", \"status\": \"pass\", \"evidence\": \"居中摆放的是绿色书。\"},\n    {\"id\": \"C6\", \"status\": \"pass\", \"evidence\": \"右侧是一本红色书。\"},\n    {\"id\": \"C7\", \"status\": \"fail\", \"evidence\": \"盆栽放置在红色书籍右侧，而非书籍后方。\"},\n    {\"id\": \"C8\", \"status\": \"pass\", \"evidence\": \"背景为浅灰色立柱/墙面且右上方大面积留白，无文字。\"}\n  ],\n  \"priority_fixes\": [\n    \"将盆栽植物从书籍右侧移至三本书的正后方。\"\n  ],\n  \"revised_prompt\": \"横向书店橱窗宣传配图。木质窗台上恰好摆放三本合上的书：左边蓝色，中间绿色，右边红色；在三本书的正后方放置一盆小型绿植盆栽。背景为简洁干净的浅灰色，画面右上方充分留白用于添加标题，画面中不要出现任何可读文字。\"\n}\n```"
+      },
+      "feedback_latency_seconds": 18.81,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1508,
+          "promptTokenCount": 78,
+          "totalTokenCount": 1586
+        },
+        "actual_size": [
+          1376,
+          768
+        ]
+      },
+      "draw_latency_seconds": 14.87
+    },
+    "deepseek": {
+      "model": "deepseek-flash",
+      "feedback_metadata": {
+        "model": "deepseek-flash",
+        "usage": {
+          "prompt_tokens": 966,
+          "completion_tokens": 3162,
+          "total_tokens": 4128,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 2850
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 966
+        },
+        "raw_response": "{\"checks\":[{\"id\":\"C1\",\"status\":\"pass\",\"evidence\":\"画面为横向宽幅构图，宽度明显大于高度。\"},{\"id\":\"C2\",\"status\":\"pass\",\"evidence\":\"书本和绿植放置在可见木纹的木质窗台上，窗框也是木质的。\"},{\"id\":\"C3\",\"status\":\"pass\",\"evidence\":\"前景木质窗台上恰好摆放三本合上的书；背景书架上的书是虚化陈设。\"},{\"id\":\"C4\",\"status\":\"pass\",\"evidence\":\"左边的一本书是蓝色。\"},{\"id\":\"C5\",\"status\":\"pass\",\"evidence\":\"中间的一本书是绿色。\"},{\"id\":\"C6\",\"status\":\"pass\",\"evidence\":\"右边的一本书是红色。\"},{\"id\":\"C7\",\"status\":\"fail\",\"evidence\":\"小型绿植盆栽位于红色书右侧，基本上与书并排，而不是位于三本书后方。\"},{\"id\":\"C8\",\"status\":\"pass\",\"evidence\":\"右上方及右侧为浅灰或接近白色的空白区域，可用于添加标题；画面中没有可读文字。\"}],\"priority_fixes\":[\"将小型绿植移到三本书的后方，不要把它停在红色书右侧，同时保持只有一盆。\"],\"revised_prompt\":\"生成一张横向书店橱窗宣传配图。木质窗台上恰好摆放三本合上的书：左边蓝色，中间绿色，右边红色；三本书后方是一盆小型绿植。背景为浅灰色，画面右上方留白用于后续添加标题。不要出现可读文字。\"}"
+      },
+      "feedback_latency_seconds": 25.15,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1556,
+          "promptTokenCount": 69,
+          "totalTokenCount": 1625
+        },
+        "actual_size": [
+          1376,
+          768
+        ]
+      },
+      "draw_latency_seconds": 14.53
+    }
+  },
+  "requested_image_size": "1024x1024",
+  "draw_calls": 4,
+  "attempts": [
+    {
+      "kind": "draw",
+      "branch": "initial",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794136561.443817,
+      "success": true,
+      "latency_seconds": 16.43,
+      "finished_at": 1794136577.874841
+    },
+    {
+      "kind": "feedback",
+      "branch": "gpt",
+      "model": "gpt-6-sol",
+      "started_at": 1794136577.8780649,
+      "success": true,
+      "latency_seconds": 22.29,
+      "finished_at": 1794136600.1668968
+    },
+    {
+      "kind": "draw",
+      "branch": "gpt",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794136600.1681302,
+      "success": true,
+      "latency_seconds": 13.68,
+      "finished_at": 1794136613.847994
+    },
+    {
+      "kind": "feedback",
+      "branch": "gemini",
+      "model": "gemini-3.8-flash",
+      "started_at": 1794136613.8523362,
+      "success": true,
+      "latency_seconds": 18.81,
+      "finished_at": 1794136632.6579032
+    },
+    {
+      "kind": "draw",
+      "branch": "gemini",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794136632.6588202,
+      "success": true,
+      "latency_seconds": 14.87,
+      "finished_at": 1794136647.528754
+    },
+    {
+      "kind": "feedback",
+      "branch": "deepseek",
+      "model": "deepseek-flash",
+      "started_at": 1794136647.529942,
+      "success": true,
+      "latency_seconds": 25.15,
+      "finished_at": 1794136672.683701
+    },
+    {
+      "kind": "draw",
+      "branch": "deepseek",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794136672.6849961,
+      "success": true,
+      "latency_seconds": 14.53,
+      "finished_at": 1794136687.2192352
+    }
+  ],
+  "initial": {
+    "metadata": {
+      "model": "gemini-3.1-flash-image",
+      "usage": {
+        "candidatesTokenCount": 1513,
+        "promptTokenCount": 68,
+        "totalTokenCount": 1581
+      },
+      "actual_size": [
+        1376,
+        768
+      ]
+    },
+    "latency_seconds": 16.43
+  },
+  "actual_image_size": [
+    1376,
+    768
+  ],
+  "finished_at": 1794136687.220056
+}

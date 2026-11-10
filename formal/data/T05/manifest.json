@@ -1,0 +1,190 @@
+{
+  "task_id": "T05",
+  "dataset": "formal",
+  "fixed_version": "formal-prep-20261108-v1",
+  "mock": false,
+  "started_at": 1794137000.5228229,
+  "draw_model": "gemini-3.1-flash-image",
+  "branches": {
+    "gpt": {
+      "model": "gpt-6-sol",
+      "feedback_metadata": {
+        "model": "gpt-6-sol",
+        "usage": {
+          "completion_tokens": 401,
+          "total_tokens": 6381,
+          "prompt_tokens": 5980,
+          "prompt_tokens_details": {
+            "cached_tokens": 4224
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "raw_response": "{\n  \"checks\": [\n    {\n      \"id\": \"C1\",\n      \"status\": \"pass\",\n      \"evidence\": \"早餐摆放在浅色木桌上。\"\n    },\n    {\n      \"id\": \"C2\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面中有一个白色盘子。\"\n    },\n    {\n      \"id\": \"C3\",\n      \"status\": \"pass\",\n      \"evidence\": \"盘内可见两片吐司。\"\n    },\n    {\n      \"id\": \"C4\",\n      \"status\": \"pass\",\n      \"evidence\": \"盘内有一个完整的煎蛋。\"\n    },\n    {\n      \"id\": \"C5\",\n      \"status\": \"pass\",\n      \"evidence\": \"一杯橙汁位于盘子右侧。\"\n    },\n    {\n      \"id\": \"C6\",\n      \"status\": \"pass\",\n      \"evidence\": \"橙汁杯左侧没有其他饮品。\"\n    },\n    {\n      \"id\": \"C7\",\n      \"status\": \"pass\",\n      \"evidence\": \"背景为奶油色，画面上方留有大块空白。\"\n    },\n    {\n      \"id\": \"C8\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面中没有可见文字。\"\n    }\n  ],\n  \"priority_fixes\": [],\n  \"revised_prompt\": \"生成一张简洁的早餐海报底图。浅色木桌上有一个白色盘子，盘子内恰好两片吐司和一个完整的煎蛋。盘子右侧是一杯橙汁，杯子左侧没有其他饮品。背景为奶油色，上方留白，画面中不出现文字。\"\n}"
+      },
+      "feedback_latency_seconds": 13.91,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1581,
+          "promptTokenCount": 68,
+          "totalTokenCount": 1649
+        },
+        "actual_size": [
+          768,
+          1376
+        ]
+      },
+      "draw_latency_seconds": 15.34
+    },
+    "gemini": {
+      "model": "gemini-3.8-flash",
+      "feedback_metadata": {
+        "model": "gemini-3.8-flash",
+        "usage": {
+          "candidatesTokenCount": 362,
+          "promptTokenCount": 1358,
+          "thoughtsTokenCount": 322,
+          "totalTokenCount": 2042
+        },
+        "raw_response": "```json\n{\n  \"checks\": [\n    {\"id\": \"C1\", \"status\": \"pass\", \"evidence\": \"浅色木质桌面清晰可见。\"},\n    {\"id\": \"C2\", \"status\": \"pass\", \"evidence\": \"桌上有一个白色圆形浅盘。\"},\n    {\"id\": \"C3\", \"status\": \"pass\", \"evidence\": \"盘中恰好叠放两片烤吐司。\"},\n    {\"id\": \"C4\", \"status\": \"pass\", \"evidence\": \"盘中有一个完整的单面煎蛋。\"},\n    {\"id\": \"C5\", \"status\": \"pass\", \"evidence\": \"透明玻璃杯装橙汁位于盘子右侧。\"},\n    {\"id\": \"C6\", \"status\": \"pass\", \"evidence\": \"橙汁杯左侧除餐盘外无其他饮品。\"},\n    {\"id\": \"C7\", \"status\": \"pass\", \"evidence\": \"背景为奶油色墙面，上方有充足留白。\"},\n    {\"id\": \"C8\", \"status\": \"pass\", \"evidence\": \"画面内未出现任何文字。\"}\n  ],\n  \"priority_fixes\": [],\n  \"revised_prompt\": \"简洁早餐海报底图。浅色原木餐桌上摆放一个白色陶瓷圆盘，盘内整齐摆放两片吐司和一个完整单面煎蛋。盘子右侧放有一杯明亮的鲜榨橙汁。背景为大面积纯净奶油色墙面，画面上方保留充裕留白，光线柔和自然，无任何文字与杂物。\"\n}\n```"
+      },
+      "feedback_latency_seconds": 18.36,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1503,
+          "promptTokenCount": 86,
+          "totalTokenCount": 1589
+        },
+        "actual_size": [
+          896,
+          1200
+        ]
+      },
+      "draw_latency_seconds": 14.41
+    },
+    "deepseek": {
+      "model": "deepseek-flash",
+      "feedback_metadata": {
+        "model": "deepseek-flash",
+        "usage": {
+          "prompt_tokens": 982,
+          "completion_tokens": 723,
+          "total_tokens": 1705,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 450
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 982
+        },
+        "raw_response": "{\"checks\":[{\"id\":\"C1\",\"status\":\"pass\",\"evidence\":\"画面下方可见浅色木质桌面，木纹清晰。\"},{\"id\":\"C2\",\"status\":\"pass\",\"evidence\":\"桌面中央有一个白色圆盘，盘内盛放食物。\"},{\"id\":\"C3\",\"status\":\"pass\",\"evidence\":\"白色盘内可见两片相互叠放的吐司，数量为两片。\"},{\"id\":\"C4\",\"status\":\"pass\",\"evidence\":\"白色盘内可见一个带完整蛋黄和蛋白的煎蛋。\"},{\"id\":\"C5\",\"status\":\"pass\",\"evidence\":\"橙汁杯位于白色盘子的右侧。\"},{\"id\":\"C6\",\"status\":\"pass\",\"evidence\":\"橙汁杯左侧仅见盘子和食物，没有其他饮品。\"},{\"id\":\"C7\",\"status\":\"pass\",\"evidence\":\"背景为奶油色墙面，画面上方保留大面积留白。\"},{\"id\":\"C8\",\"status\":\"pass\",\"evidence\":\"画面中未发现任何可见文字。\"}],\"priority_fixes\":[],\"revised_prompt\":\"生成一张简洁的早餐海报底图：浅色木桌上放一个白色盘子，盘内恰好两片吐司和一个完整的煎蛋；盘子右侧是一杯橙汁，杯子左侧没有任何其他饮品；背景为奶油色，上方留白，画面中不出现文字。\"}"
+      },
+      "feedback_latency_seconds": 8.26,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1547,
+          "promptTokenCount": 68,
+          "totalTokenCount": 1615
+        },
+        "actual_size": [
+          896,
+          1200
+        ]
+      },
+      "draw_latency_seconds": 14.97
+    }
+  },
+  "requested_image_size": "1024x1024",
+  "draw_calls": 4,
+  "attempts": [
+    {
+      "kind": "draw",
+      "branch": "initial",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794137000.522828,
+      "success": true,
+      "latency_seconds": 14.67,
+      "finished_at": 1794137015.193215
+    },
+    {
+      "kind": "feedback",
+      "branch": "gpt",
+      "model": "gpt-6-sol",
+      "started_at": 1794137015.1941628,
+      "success": true,
+      "latency_seconds": 13.91,
+      "finished_at": 1794137029.106412
+    },
+    {
+      "kind": "draw",
+      "branch": "gpt",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794137029.107575,
+      "success": true,
+      "latency_seconds": 15.34,
+      "finished_at": 1794137044.442792
+    },
+    {
+      "kind": "feedback",
+      "branch": "gemini",
+      "model": "gemini-3.8-flash",
+      "started_at": 1794137044.443966,
+      "success": true,
+      "latency_seconds": 18.36,
+      "finished_at": 1794137062.807012
+    },
+    {
+      "kind": "draw",
+      "branch": "gemini",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794137062.80812,
+      "success": true,
+      "latency_seconds": 14.41,
+      "finished_at": 1794137077.219944
+    },
+    {
+      "kind": "feedback",
+      "branch": "deepseek",
+      "model": "deepseek-flash",
+      "started_at": 1794137077.221397,
+      "success": true,
+      "latency_seconds": 8.26,
+      "finished_at": 1794137085.482613
+    },
+    {
+      "kind": "draw",
+      "branch": "deepseek",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794137085.483427,
+      "success": true,
+      "latency_seconds": 14.97,
+      "finished_at": 1794137100.453274
+    }
+  ],
+  "initial": {
+    "metadata": {
+      "model": "gemini-3.1-flash-image",
+      "usage": {
+        "candidatesTokenCount": 1491,
+        "promptTokenCount": 68,
+        "totalTokenCount": 1559
+      },
+      "actual_size": [
+        896,
+        1200
+      ]
+    },
+    "latency_seconds": 14.67
+  },
+  "actual_image_size": [
+    896,
+    1200
+  ],
+  "finished_at": 1794137100.453904
+}

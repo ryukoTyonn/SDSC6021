@@ -1,0 +1,169 @@
+{
+  "task_id": "T08",
+  "dataset": "formal",
+  "fixed_version": "formal-prep-20261108-v1",
+  "mock": false,
+  "started_at": 1794137312.9194,
+  "draw_model": "gemini-3.1-flash-image",
+  "branches": {
+    "gpt": {
+      "model": "gpt-6-sol",
+      "feedback_metadata": {
+        "model": "gpt-6-sol",
+        "usage": {
+          "completion_tokens": 1755,
+          "total_tokens": 6218,
+          "prompt_tokens": 4463,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 615
+          }
+        },
+        "raw_response": "{\n  \"checks\": [\n    {\n      \"id\": \"C1\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面下方可见一张深色木桌。\"\n    },\n    {\n      \"id\": \"C2\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面中可见恰好一个白色茶壶。\"\n    },\n    {\n      \"id\": \"C3\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面中可见恰好两个小茶杯。\"\n    },\n    {\n      \"id\": \"C4\",\n      \"status\": \"pass\",\n      \"evidence\": \"白色茶壶位于两个茶杯的后方。\"\n    },\n    {\n      \"id\": \"C5\",\n      \"status\": \"pass\",\n      \"evidence\": \"左侧茶杯为蓝色。\"\n    },\n    {\n      \"id\": \"C6\",\n      \"status\": \"pass\",\n      \"evidence\": \"右侧茶杯为白色。\"\n    },\n    {\n      \"id\": \"C7\",\n      \"status\": \"pass\",\n      \"evidence\": \"背景整体为浅米色调。\"\n    },\n    {\n      \"id\": \"C8\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面中未见茶叶包装、可见文字或人物。\"\n    }\n  ],\n  \"priority_fixes\": [],\n  \"revised_prompt\": \"生成一张茶具静物配图。深色木桌上恰好有一个白色茶壶和两个小茶杯；茶壶位于两个茶杯后方，左侧茶杯为蓝色，右侧茶杯为白色。背景为浅米色，不要出现茶叶包装、文字或人物。\"\n}"
+      },
+      "feedback_latency_seconds": 30.81,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1518,
+          "promptTokenCount": 65,
+          "totalTokenCount": 1583
+        },
+        "actual_size": [
+          1408,
+          768
+        ]
+      },
+      "draw_latency_seconds": 15.36
+    },
+    "gemini": {
+      "model": "gemini-3.8-flash",
+      "error": "缺少新提示词"
+    },
+    "deepseek": {
+      "model": "deepseek-flash",
+      "feedback_metadata": {
+        "model": "deepseek-flash",
+        "usage": {
+          "prompt_tokens": 976,
+          "completion_tokens": 483,
+          "total_tokens": 1459,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 239
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 976
+        },
+        "raw_response": "{\"checks\":[{\"id\":\"C1\",\"status\":\"pass\",\"evidence\":\"静物放置在深棕色、可见木纹的桌面上。\"},{\"id\":\"C2\",\"status\":\"pass\",\"evidence\":\"画面中只有一个白色茶壶，位于后方中央。\"},{\"id\":\"C3\",\"status\":\"pass\",\"evidence\":\"前景中恰好有两个小茶杯。\"},{\"id\":\"C4\",\"status\":\"pass\",\"evidence\":\"白色茶壶在后方，两个茶杯位于其前方。\"},{\"id\":\"C5\",\"status\":\"pass\",\"evidence\":\"左侧茶杯为蓝色。\"},{\"id\":\"C6\",\"status\":\"pass\",\"evidence\":\"右侧茶杯为白色/米白色。\"},{\"id\":\"C7\",\"status\":\"pass\",\"evidence\":\"背景墙面与窗帘呈浅米色。\"},{\"id\":\"C8\",\"status\":\"pass\",\"evidence\":\"画面中没有茶叶包装、可见文字或人物。\"}],\"priority_fixes\":[],\"revised_prompt\":\"生成一张茶具静物配图：深色木桌上恰好有一个白色茶壶和两个小茶杯；茶壶位于两个茶杯后方，左侧茶杯为蓝色，右侧茶杯为白色；背景为浅米色；不要出现茶叶包装、文字或人物。\"}"
+      },
+      "feedback_latency_seconds": 6.81,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1531,
+          "promptTokenCount": 65,
+          "totalTokenCount": 1596
+        },
+        "actual_size": [
+          1408,
+          768
+        ]
+      },
+      "draw_latency_seconds": 14.9
+    }
+  },
+  "requested_image_size": "1024x1024",
+  "draw_calls": 3,
+  "attempts": [
+    {
+      "kind": "draw",
+      "branch": "initial",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794137312.919405,
+      "success": true,
+      "latency_seconds": 17.71,
+      "finished_at": 1794137330.628743
+    },
+    {
+      "kind": "feedback",
+      "branch": "gpt",
+      "model": "gpt-6-sol",
+      "started_at": 1794137330.629937,
+      "success": true,
+      "latency_seconds": 30.81,
+      "finished_at": 1794137361.441491
+    },
+    {
+      "kind": "draw",
+      "branch": "gpt",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794137361.441817,
+      "success": true,
+      "latency_seconds": 15.36,
+      "finished_at": 1794137376.805396
+    },
+    {
+      "kind": "feedback",
+      "branch": "gemini",
+      "model": "gemini-3.8-flash",
+      "started_at": 1794137376.806866,
+      "success": false,
+      "error": "缺少新提示词",
+      "latency_seconds": 17.08,
+      "finished_at": 1794137393.889235
+    },
+    {
+      "kind": "feedback",
+      "branch": "gemini",
+      "model": "gemini-3.8-flash",
+      "started_at": 1794137393.889757,
+      "success": false,
+      "error": "缺少新提示词",
+      "latency_seconds": 19.02,
+      "finished_at": 1794137412.9070342
+    },
+    {
+      "kind": "feedback",
+      "branch": "deepseek",
+      "model": "deepseek-flash",
+      "started_at": 1794137412.909141,
+      "success": true,
+      "latency_seconds": 6.81,
+      "finished_at": 1794137419.714946
+    },
+    {
+      "kind": "draw",
+      "branch": "deepseek",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794137419.716307,
+      "success": true,
+      "latency_seconds": 14.9,
+      "finished_at": 1794137434.617148
+    }
+  ],
+  "initial": {
+    "metadata": {
+      "model": "gemini-3.1-flash-image",
+      "usage": {
+        "candidatesTokenCount": 1584,
+        "promptTokenCount": 65,
+        "totalTokenCount": 1649
+      },
+      "actual_size": [
+        1408,
+        768
+      ]
+    },
+    "latency_seconds": 17.71
+  },
+  "actual_image_size": [
+    1408,
+    768
+  ],
+  "finished_at": 1794137434.618013
+}

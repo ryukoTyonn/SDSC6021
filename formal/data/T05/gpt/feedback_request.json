@@ -1,0 +1,41 @@
+{
+  "model": "gpt-6-sol",
+  "original_requirement": "生成一张简洁的早餐海报底图。浅色木桌上有一个白色盘子，盘子内恰好两片吐司和一个完整的煎蛋。盘子右侧是一杯橙汁，杯子左侧没有其他饮品。背景为奶油色，上方留白，画面中不出现文字。",
+  "checklist": [
+    {
+      "id": "C1",
+      "text": "浅色木桌"
+    },
+    {
+      "id": "C2",
+      "text": "一个白色盘子"
+    },
+    {
+      "id": "C3",
+      "text": "盘内恰好两片吐司"
+    },
+    {
+      "id": "C4",
+      "text": "盘内恰好一个完整煎蛋"
+    },
+    {
+      "id": "C5",
+      "text": "一杯橙汁位于盘子右侧"
+    },
+    {
+      "id": "C6",
+      "text": "杯子左侧没有其他饮品"
+    },
+    {
+      "id": "C7",
+      "text": "奶油色背景且上方留白"
+    },
+    {
+      "id": "C8",
+      "text": "没有可见文字"
+    }
+  ],
+  "system_instruction": "Inspect the actual image against every checklist item. Return JSON only: checks [{id,status,evidence}], priority_fixes [string], revised_prompt string. status must be pass, fail, or uncertain. Include at most two priority fixes. If all requirements pass, do not invent problems. Preserve all original requirements. Do not invent visual evidence.",
+  "image_path": "../initial.png",
+  "image_sha256": "f5e183703b2165482f006ccc6d0d4cbec70818482859ed403db3f7c47e4e7e48"
+}

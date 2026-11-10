@@ -1,0 +1,41 @@
+{
+  "model": "gpt-6-sol",
+  "original_requirement": "生成一张竖向花店宣传配图。画面下半部有一个浅绿色花瓶，瓶中恰好插着三朵粉色郁金香和两朵黄色郁金香。花瓶位于白色桌面上，背景为淡粉色；上半部留出适合添加标题的空白。不要出现人物、品牌或文字。",
+  "checklist": [
+    {
+      "id": "C1",
+      "text": "竖向构图"
+    },
+    {
+      "id": "C2",
+      "text": "一个浅绿色花瓶位于下半部"
+    },
+    {
+      "id": "C3",
+      "text": "恰好三朵粉色郁金香"
+    },
+    {
+      "id": "C4",
+      "text": "恰好两朵黄色郁金香"
+    },
+    {
+      "id": "C5",
+      "text": "花插在同一花瓶内"
+    },
+    {
+      "id": "C6",
+      "text": "花瓶置于白色桌面"
+    },
+    {
+      "id": "C7",
+      "text": "淡粉背景且上半部留白"
+    },
+    {
+      "id": "C8",
+      "text": "没有人物、品牌标志或可见文字"
+    }
+  ],
+  "system_instruction": "Inspect the actual image against every checklist item. Return JSON only: checks [{id,status,evidence}], priority_fixes [string], revised_prompt string. status must be pass, fail, or uncertain. Include at most two priority fixes. If all requirements pass, do not invent problems. Preserve all original requirements. Do not invent visual evidence.",
+  "image_path": "../initial.png",
+  "image_sha256": "fba6f990f0726dba0e9b238f3ef49420a93c94b99f4747284c7acd60647aabf8"
+}

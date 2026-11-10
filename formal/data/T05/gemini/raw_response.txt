@@ -1,0 +1,16 @@
+```json
+{
+  "checks": [
+    {"id": "C1", "status": "pass", "evidence": "浅色木质桌面清晰可见。"},
+    {"id": "C2", "status": "pass", "evidence": "桌上有一个白色圆形浅盘。"},
+    {"id": "C3", "status": "pass", "evidence": "盘中恰好叠放两片烤吐司。"},
+    {"id": "C4", "status": "pass", "evidence": "盘中有一个完整的单面煎蛋。"},
+    {"id": "C5", "status": "pass", "evidence": "透明玻璃杯装橙汁位于盘子右侧。"},
+    {"id": "C6", "status": "pass", "evidence": "橙汁杯左侧除餐盘外无其他饮品。"},
+    {"id": "C7", "status": "pass", "evidence": "背景为奶油色墙面，上方有充足留白。"},
+    {"id": "C8", "status": "pass", "evidence": "画面内未出现任何文字。"}
+  ],
+  "priority_fixes": [],
+  "revised_prompt": "简洁早餐海报底图。浅色原木餐桌上摆放一个白色陶瓷圆盘，盘内整齐摆放两片吐司和一个完整单面煎蛋。盘子右侧放有一杯明亮的鲜榨橙汁。背景为大面积纯净奶油色墙面，画面上方保留充裕留白，光线柔和自然，无任何文字与杂物。"
+}
+```

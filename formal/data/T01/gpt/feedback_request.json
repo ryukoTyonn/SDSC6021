@@ -1,0 +1,41 @@
+{
+  "model": "gpt-6-sol",
+  "original_requirement": "生成一张横向书店橱窗宣传配图。木质窗台上恰好摆放三本合上的书：左边蓝色，中间绿色，右边红色；书后方是一盆小型绿植。背景为浅灰色，画面右上方留白用于后续添加标题。不要出现可读文字。",
+  "checklist": [
+    {
+      "id": "C1",
+      "text": "横向构图"
+    },
+    {
+      "id": "C2",
+      "text": "窗台为木质"
+    },
+    {
+      "id": "C3",
+      "text": "恰好三本合上的书"
+    },
+    {
+      "id": "C4",
+      "text": "左边书为蓝色"
+    },
+    {
+      "id": "C5",
+      "text": "中间书为绿色"
+    },
+    {
+      "id": "C6",
+      "text": "右边书为红色"
+    },
+    {
+      "id": "C7",
+      "text": "一盆小型绿植位于书后方"
+    },
+    {
+      "id": "C8",
+      "text": "浅灰背景且右上方留白，没有可读文字"
+    }
+  ],
+  "system_instruction": "Inspect the actual image against every checklist item. Return JSON only: checks [{id,status,evidence}], priority_fixes [string], revised_prompt string. status must be pass, fail, or uncertain. Include at most two priority fixes. If all requirements pass, do not invent problems. Preserve all original requirements. Do not invent visual evidence.",
+  "image_path": "../initial.png",
+  "image_sha256": "f86df5801d3d682c3da7aa354f248c09c22ddf2dd82743a603340b3000c54db4"
+}

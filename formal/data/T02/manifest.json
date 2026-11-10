@@ -1,0 +1,190 @@
+{
+  "task_id": "T02",
+  "dataset": "formal",
+  "fixed_version": "formal-prep-20261108-v1",
+  "mock": false,
+  "started_at": 1794136687.22064,
+  "draw_model": "gemini-3.1-flash-image",
+  "branches": {
+    "gpt": {
+      "model": "gpt-6-sol",
+      "feedback_metadata": {
+        "model": "gpt-6-sol",
+        "usage": {
+          "completion_tokens": 617,
+          "total_tokens": 14894,
+          "prompt_tokens": 14277,
+          "prompt_tokens_details": {
+            "cached_tokens": 10107
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "raw_response": "{\"checks\":[{\"id\":\"C1\",\"status\":\"pass\",\"evidence\":\"A transparent glass bowl is visible.\"},{\"id\":\"C2\",\"status\":\"pass\",\"evidence\":\"Exactly two lemons are visible inside the bowl.\"},{\"id\":\"C3\",\"status\":\"pass\",\"evidence\":\"Both lemons are yellow.\"},{\"id\":\"C4\",\"status\":\"pass\",\"evidence\":\"Exactly one apple is visible inside the bowl.\"},{\"id\":\"C5\",\"status\":\"pass\",\"evidence\":\"The apple is green.\"},{\"id\":\"C6\",\"status\":\"pass\",\"evidence\":\"A small silver spoon lies to the left of the bowl.\"},{\"id\":\"C7\",\"status\":\"pass\",\"evidence\":\"The objects rest on a white tabletop against a light blue background.\"},{\"id\":\"C8\",\"status\":\"pass\",\"evidence\":\"No people or visible text appear.\"}],\"priority_fixes\":[],\"revised_prompt\":\"生成一张简洁的水果静物图。白色桌面上有一个透明玻璃碗，碗内恰好有两个黄色柠檬和一个绿色青苹果；碗左侧放一把银色小勺。背景为淡蓝色，不要出现人物或文字。\"}"
+      },
+      "feedback_latency_seconds": 11.19,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1481,
+          "promptTokenCount": 51,
+          "totalTokenCount": 1532
+        },
+        "actual_size": [
+          1408,
+          768
+        ]
+      },
+      "draw_latency_seconds": 13.99
+    },
+    "gemini": {
+      "model": "gemini-3.8-flash",
+      "feedback_metadata": {
+        "model": "gemini-3.8-flash",
+        "usage": {
+          "candidatesTokenCount": 384,
+          "promptTokenCount": 1353,
+          "thoughtsTokenCount": 330,
+          "totalTokenCount": 2067
+        },
+        "raw_response": "```json\n{\n  \"checks\": [\n    {\n      \"id\": \"C1\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面中央偏右有一个透明玻璃碗。\"\n    },\n    {\n      \"id\": \"C2\",\n      \"status\": \"pass\",\n      \"evidence\": \"碗内可见两个柠檬。\"\n    },\n    {\n      \"id\": \"C3\",\n      \"status\": \"pass\",\n      \"evidence\": \"两个柠檬均为黄色。\"\n    },\n    {\n      \"id\": \"C4\",\n      \"status\": \"pass\",\n      \"evidence\": \"碗内有且仅有一个苹果。\"\n    },\n    {\n      \"id\": \"C5\",\n      \"status\": \"pass\",\n      \"evidence\": \"苹果表面呈现鲜绿色。\"\n    },\n    {\n      \"id\": \"C6\",\n      \"status\": \"pass\",\n      \"evidence\": \"碗的左侧平放着一把银色小勺。\"\n    },\n    {\n      \"id\": \"C7\",\n      \"status\": \"pass\",\n      \"evidence\": \"桌面为白色，背景为纯净的淡蓝色。\"\n    },\n    {\n      \"id\": \"C8\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面无人物且无任何文字出现。\"\n    }\n  ],\n  \"priority_fixes\": [],\n  \"revised_prompt\": \"生成一张简洁的水果静物图。白色桌面上有一个透明玻璃碗，碗内恰好有两个黄色柠檬和一个绿色青苹果；碗左侧放一把银色小勺。背景为淡蓝色，不要出现人物或文字。\"\n}\n```"
+      },
+      "feedback_latency_seconds": 17.35,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1551,
+          "promptTokenCount": 51,
+          "totalTokenCount": 1602
+        },
+        "actual_size": [
+          1408,
+          768
+        ]
+      },
+      "draw_latency_seconds": 15.67
+    },
+    "deepseek": {
+      "model": "deepseek-flash",
+      "feedback_metadata": {
+        "model": "deepseek-flash",
+        "usage": {
+          "prompt_tokens": 968,
+          "completion_tokens": 642,
+          "total_tokens": 1610,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 397
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 968
+        },
+        "raw_response": "{\"checks\":[{\"id\":\"C1\",\"status\":\"pass\",\"evidence\":\"画面中央可见一个透明玻璃碗，能透过碗壁看到内部水果。\"},{\"id\":\"C2\",\"status\":\"pass\",\"evidence\":\"碗内可见两个柠檬，一前一后摆放。\"},{\"id\":\"C3\",\"status\":\"pass\",\"evidence\":\"两个柠檬均呈黄色。\"},{\"id\":\"C4\",\"status\":\"pass\",\"evidence\":\"碗内可见一个绿色苹果，未见其他苹果。\"},{\"id\":\"C5\",\"status\":\"pass\",\"evidence\":\"苹果呈青绿色。\"},{\"id\":\"C6\",\"status\":\"pass\",\"evidence\":\"一把银色小勺位于玻璃碗左侧、桌面之上。\"},{\"id\":\"C7\",\"status\":\"pass\",\"evidence\":\"物体放在白色桌面上，背景为淡蓝色。\"},{\"id\":\"C8\",\"status\":\"pass\",\"evidence\":\"画面中未出现人物，也没有可见文字。\"}],\"priority_fixes\":[],\"revised_prompt\":\"生成一张简洁的水果静物图：白色桌面上放一个透明玻璃碗，碗内恰好有两个黄色柠檬和一个绿色青苹果；碗左侧放一把银色小勺。背景为淡蓝色，画面中不要出现人物或文字。\"}"
+      },
+      "feedback_latency_seconds": 7.39,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1543,
+          "promptTokenCount": 54,
+          "totalTokenCount": 1597
+        },
+        "actual_size": [
+          1408,
+          768
+        ]
+      },
+      "draw_latency_seconds": 15.66
+    }
+  },
+  "requested_image_size": "1024x1024",
+  "draw_calls": 4,
+  "attempts": [
+    {
+      "kind": "draw",
+      "branch": "initial",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794136687.220644,
+      "success": true,
+      "latency_seconds": 14.92,
+      "finished_at": 1794136702.140217
+    },
+    {
+      "kind": "feedback",
+      "branch": "gpt",
+      "model": "gpt-6-sol",
+      "started_at": 1794136702.141137,
+      "success": true,
+      "latency_seconds": 11.19,
+      "finished_at": 1794136713.3298821
+    },
+    {
+      "kind": "draw",
+      "branch": "gpt",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794136713.330841,
+      "success": true,
+      "latency_seconds": 13.99,
+      "finished_at": 1794136727.316876
+    },
+    {
+      "kind": "feedback",
+      "branch": "gemini",
+      "model": "gemini-3.8-flash",
+      "started_at": 1794136727.3203,
+      "success": true,
+      "latency_seconds": 17.35,
+      "finished_at": 1794136744.6714299
+    },
+    {
+      "kind": "draw",
+      "branch": "gemini",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794136744.673113,
+      "success": true,
+      "latency_seconds": 15.67,
+      "finished_at": 1794136760.341654
+    },
+    {
+      "kind": "feedback",
+      "branch": "deepseek",
+      "model": "deepseek-flash",
+      "started_at": 1794136760.34306,
+      "success": true,
+      "latency_seconds": 7.39,
+      "finished_at": 1794136767.731624
+    },
+    {
+      "kind": "draw",
+      "branch": "deepseek",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794136767.7324018,
+      "success": true,
+      "latency_seconds": 15.66,
+      "finished_at": 1794136783.388957
+    }
+  ],
+  "initial": {
+    "metadata": {
+      "model": "gemini-3.1-flash-image",
+      "usage": {
+        "candidatesTokenCount": 1518,
+        "promptTokenCount": 51,
+        "totalTokenCount": 1569
+      },
+      "actual_size": [
+        1408,
+        768
+      ]
+    },
+    "latency_seconds": 14.92
+  },
+  "actual_image_size": [
+    1408,
+    768
+  ],
+  "finished_at": 1794136783.3898702
+}

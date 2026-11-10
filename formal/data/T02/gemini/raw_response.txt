@@ -1,0 +1,48 @@
+```json
+{
+  "checks": [
+    {
+      "id": "C1",
+      "status": "pass",
+      "evidence": "画面中央偏右有一个透明玻璃碗。"
+    },
+    {
+      "id": "C2",
+      "status": "pass",
+      "evidence": "碗内可见两个柠檬。"
+    },
+    {
+      "id": "C3",
+      "status": "pass",
+      "evidence": "两个柠檬均为黄色。"
+    },
+    {
+      "id": "C4",
+      "status": "pass",
+      "evidence": "碗内有且仅有一个苹果。"
+    },
+    {
+      "id": "C5",
+      "status": "pass",
+      "evidence": "苹果表面呈现鲜绿色。"
+    },
+    {
+      "id": "C6",
+      "status": "pass",
+      "evidence": "碗的左侧平放着一把银色小勺。"
+    },
+    {
+      "id": "C7",
+      "status": "pass",
+      "evidence": "桌面为白色，背景为纯净的淡蓝色。"
+    },
+    {
+      "id": "C8",
+      "status": "pass",
+      "evidence": "画面无人物且无任何文字出现。"
+    }
+  ],
+  "priority_fixes": [],
+  "revised_prompt": "生成一张简洁的水果静物图。白色桌面上有一个透明玻璃碗，碗内恰好有两个黄色柠檬和一个绿色青苹果；碗左侧放一把银色小勺。背景为淡蓝色，不要出现人物或文字。"
+}
+```

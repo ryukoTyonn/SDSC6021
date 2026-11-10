@@ -1,0 +1,26 @@
+{
+  "version_id": "formal-prep-20261108-v1",
+  "status": "prepared-not-started",
+  "code_archive": "genai_feedback_preformal_20261108.zip",
+  "code_archive_sha256": "f430650d4807ebf60e16698a4f04c4ce87d816c4c4ceed4687343c6d3bc90ab4",
+  "formal_archive": "genai_feedback_formal_v1.zip",
+  "model_ids": {
+    "draw": "gemini-3.1-flash-image",
+    "gpt": "gpt-6-sol",
+    "gemini": "gemini-3.8-flash",
+    "deepseek": "deepseek-flash"
+  },
+  "evaluation_instruction": "Inspect the actual image against every checklist item. Return JSON only: checks [{id,status,evidence}], priority_fixes [string], revised_prompt string. status must be pass, fail, or uncertain. Include at most two priority fixes. If all requirements pass, do not invent problems. Preserve all original requirements. Do not invent visual evidence.",
+  "checklist_rule": "每个正式任务固定 C1–C8；左/右按观看者所见；恰好按清楚可辨认的目标数；模糊或遮挡用 uncertain。正式运行中不修改清单。",
+  "configuration_without_keys": {
+    "draw_base_url": "https://code1.newcli.com/v1",
+    "gpt_base_url": "https://code1.newcli.com/v1",
+    "gemini_base_url": "https://code1.newcli.com/v1",
+    "deepseek_base_url": "https://api.deepseek.com",
+    "requested_image_size": "1024x1024",
+    "image_quality": "high",
+    "default_timeout_seconds": 120,
+    "planned_successful_draws_per_task": 4,
+    "planned_feedback_calls_per_task": 3
+  }
+}

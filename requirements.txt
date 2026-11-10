@@ -1,0 +1,6 @@
+Pillow>=10,<13
+gradio>=4,<7
+python-dotenv>=1,<2
+
+huggingface-hub<1
+pydantic<2.10

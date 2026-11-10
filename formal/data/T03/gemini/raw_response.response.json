@@ -1,0 +1,24 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"checks\": [\n    {\n      \"id\": \"C1\",\n      \"status\": \"pass\",\n      \"evidence\": \"中央仅有一只幼犬。\"\n    },\n    {\n      \"id\": \"C2\",\n      \"status\": \"pass\",\n      \"evidence\": \"幼犬毛色呈棕色。\"\n    },\n    {\n      \"id\": \"C3\",\n      \"status\": \"pass\",\n      \"evidence\": \"小狗画面左侧置有蓝色水碗。\"\n    },\n    {\n      \"id\": \"C4\",\n      \"status\": \"pass\",\n      \"evidence\": \"小狗画面右侧置有红色玩具球。\"\n    },\n    {\n      \"id\": \"C5\",\n      \"status\": \"pass\",\n      \"evidence\": \"小狗呈端正坐姿。\"\n    },\n    {\n      \"id\": \"C6\",\n      \"status\": \"pass\",\n      \"evidence\": \"小狗位于浅米色编织地毯上。\"\n    },\n    {\n      \"id\": \"C7\",\n      \"status\": \"pass\",\n      \"evidence\": \"背景为白色墙面，上方区域留白充足。\"\n    },\n    {\n      \"id\": \"C8\",\n      \"status\": \"pass\",\n      \"evidence\": \"无其他动物或文字。\"\n    }\n  ],\n  \"priority_fixes\": [],\n  \"revised_prompt\": \"\"\n}\n```",
+            "thoughtSignature": "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"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP"
+    }
+  ],
+  "modelVersion": "gemini-3.8-flash",
+  "responseId": "GVvwap3iPJj8wbUPj9eV6AI",
+  "usageMetadata": {
+    "candidatesTokenCount": 341,
+    "promptTokenCount": 1367,
+    "thoughtsTokenCount": 587,
+    "totalTokenCount": 2295
+  }
+}

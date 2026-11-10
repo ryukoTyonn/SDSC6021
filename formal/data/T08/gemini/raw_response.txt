@@ -1,0 +1,16 @@
+```json
+{
+  "checks": [
+    {"id": "C1", "status": "pass", "evidence": "深色木质桌面清晰可见"},
+    {"id": "C2", "status": "pass", "evidence": "画面中仅有单个白色茶壶"},
+    {"id": "C3", "status": "pass", "evidence": "前方恰好摆放两只小茶杯"},
+    {"id": "C4", "status": "pass", "evidence": "茶壶位于两只茶杯后方中心偏左"},
+    {"id": "C5", "status": "pass", "evidence": "左侧杯子呈蓝色釉面"},
+    {"id": "C6", "status": "pass", "evidence": "右侧杯子为白色陶瓷"},
+    {"id": "C7", "status": "pass", "evidence": "背景呈现浅米色纯净色调"},
+    {"id": "C8", "status": "pass", "evidence": "无包装、文字及人物出现"}
+  ],
+  "priority_fixes": [],
+  "revised_prompt": ""
+}
+```

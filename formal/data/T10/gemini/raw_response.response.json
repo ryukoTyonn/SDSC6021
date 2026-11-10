@@ -1,0 +1,24 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"checks\": [\n    {\n      \"id\": \"C1\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面为竖向构图。\"\n    },\n    {\n      \"id\": \"C2\",\n      \"status\": \"pass\",\n      \"evidence\": \"下半部中央设有一个浅绿色陶瓷花瓶。\"\n    },\n    {\n      \"id\": \"C3\",\n      \"status\": \"fail\",\n      \"evidence\": \"画面中共有4朵粉色郁金香，而非恰好3朵。\"\n    },\n    {\n      \"id\": \"C4\",\n      \"status\": \"fail\",\n      \"evidence\": \"画面中共有3朵黄色郁金香，而非恰好2朵。\"\n    },\n    {\n      \"id\": \"C5\",\n      \"status\": \"pass\",\n      \"evidence\": \"所有花朵均插在同一只浅绿色花瓶中。\"\n    },\n    {\n      \"id\": \"C6\",\n      \"status\": \"pass\",\n      \"evidence\": \"花瓶放置在白色木质桌面上。\"\n    },\n    {\n      \"id\": \"C7\",\n      \"status\": \"pass\",\n      \"evidence\": \"顶部留有大面积淡粉色空白背景。\"\n    },\n    {\n      \"id\": \"C8\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面无人物、品牌或文字标识。\"\n    }\n  ],\n  \"priority_fixes\": [\n    \"将粉色郁金香数量严格控制为恰好3朵。\",\n    \"将黄色郁金香数量严格控制为恰好2朵。\"\n  ],\n  \"revised_prompt\": \"生成一张竖向花店宣传配图。画面下半部有一个浅绿色花瓶，瓶中严格只插有5朵郁金香：恰好三朵粉色郁金香和恰好两朵黄色郁金香。花瓶放置在干净的白色桌面上，背景为统一淡粉色，上半部保留大面积纯净留白以便排版。无人物、无文字、无品牌logo。\"\n}\n```",
+            "thoughtSignature": "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"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP"
+    }
+  ],
+  "modelVersion": "gemini-3.8-flash",
+  "responseId": "Il7wat_8F8up6dkPh-mZgAY",
+  "usageMetadata": {
+    "candidatesTokenCount": 491,
+    "promptTokenCount": 1408,
+    "thoughtsTokenCount": 532,
+    "totalTokenCount": 2431
+  }
+}

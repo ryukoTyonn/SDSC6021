@@ -1,0 +1,18 @@
+```json
+{
+  "checks": [
+    {"id": "C1", "status": "pass", "evidence": "横向宽幅画面。"},
+    {"id": "C2", "status": "pass", "evidence": "展示面为清晰的木质窗台结构。"},
+    {"id": "C3", "status": "pass", "evidence": "画面内只有三本整齐摆放的合闭书籍。"},
+    {"id": "C4", "status": "pass", "evidence": "最左侧是一本蓝色书。"},
+    {"id": "C5", "status": "pass", "evidence": "居中摆放的是绿色书。"},
+    {"id": "C6", "status": "pass", "evidence": "右侧是一本红色书。"},
+    {"id": "C7", "status": "fail", "evidence": "盆栽放置在红色书籍右侧，而非书籍后方。"},
+    {"id": "C8", "status": "pass", "evidence": "背景为浅灰色立柱/墙面且右上方大面积留白，无文字。"}
+  ],
+  "priority_fixes": [
+    "将盆栽植物从书籍右侧移至三本书的正后方。"
+  ],
+  "revised_prompt": "横向书店橱窗宣传配图。木质窗台上恰好摆放三本合上的书：左边蓝色，中间绿色，右边红色；在三本书的正后方放置一盆小型绿植盆栽。背景为简洁干净的浅灰色，画面右上方充分留白用于添加标题，画面中不要出现任何可读文字。"
+}
+```

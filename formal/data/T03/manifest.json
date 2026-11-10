@@ -1,0 +1,169 @@
+{
+  "task_id": "T03",
+  "dataset": "formal",
+  "fixed_version": "formal-prep-20261108-v1",
+  "mock": false,
+  "started_at": 1794136783.390749,
+  "draw_model": "gemini-3.1-flash-image",
+  "branches": {
+    "gpt": {
+      "model": "gpt-6-sol",
+      "feedback_metadata": {
+        "model": "gpt-6-sol",
+        "usage": {
+          "completion_tokens": 730,
+          "total_tokens": 15808,
+          "prompt_tokens": 15078,
+          "prompt_tokens_details": {
+            "cached_tokens": 10668
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "raw_response": "{\"checks\":[{\"id\":\"C1\",\"status\":\"pass\",\"evidence\":\"画面中只有一只小狗。\"},{\"id\":\"C2\",\"status\":\"pass\",\"evidence\":\"小狗毛色为棕色。\"},{\"id\":\"C3\",\"status\":\"pass\",\"evidence\":\"蓝色水碗位于小狗画面左侧。\"},{\"id\":\"C4\",\"status\":\"pass\",\"evidence\":\"红色玩具球位于小狗画面右侧。\"},{\"id\":\"C5\",\"status\":\"pass\",\"evidence\":\"小狗呈坐姿。\"},{\"id\":\"C6\",\"status\":\"pass\",\"evidence\":\"小狗坐在浅色编织地毯上。\"},{\"id\":\"C7\",\"status\":\"pass\",\"evidence\":\"背景是室内白墙，狗上方有大面积留白。\"},{\"id\":\"C8\",\"status\":\"pass\",\"evidence\":\"画面中没有其他动物或可见文字。\"}],\"priority_fixes\":[],\"revised_prompt\":\"生成一张宠物用品宣传配图。画面中央是一只棕色小狗，狗的左边有一个蓝色水碗，右边有一个红色玩具球。狗坐在浅色地毯上，背景为室内白墙。画面上方留白，不要出现其他动物或文字。\"}"
+      },
+      "feedback_latency_seconds": 12.65,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1519,
+          "promptTokenCount": 60,
+          "totalTokenCount": 1579
+        },
+        "actual_size": [
+          1408,
+          768
+        ]
+      },
+      "draw_latency_seconds": 14.41
+    },
+    "gemini": {
+      "model": "gemini-3.8-flash",
+      "error": "缺少新提示词"
+    },
+    "deepseek": {
+      "model": "deepseek-flash",
+      "feedback_metadata": {
+        "model": "deepseek-flash",
+        "usage": {
+          "prompt_tokens": 978,
+          "completion_tokens": 931,
+          "total_tokens": 1909,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 675
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 978
+        },
+        "raw_response": "{\"checks\":[{\"id\":\"C1\",\"status\":\"pass\",\"evidence\":\"画面中央仅有一只小狗，没有其他狗。\"},{\"id\":\"C2\",\"status\":\"pass\",\"evidence\":\"小狗主体为棕色卷毛。\"},{\"id\":\"C3\",\"status\":\"pass\",\"evidence\":\"蓝色水碗位于狗的左侧，即画面左侧。\"},{\"id\":\"C4\",\"status\":\"pass\",\"evidence\":\"红色玩具球位于狗的右侧，即画面右侧。\"},{\"id\":\"C5\",\"status\":\"pass\",\"evidence\":\"狗呈坐姿，前腿直立支撑身体。\"},{\"id\":\"C6\",\"status\":\"pass\",\"evidence\":\"狗坐在浅色编织地毯上。\"},{\"id\":\"C7\",\"status\":\"pass\",\"evidence\":\"背景为室内白墙，画面上方有大面积留白。\"},{\"id\":\"C8\",\"status\":\"pass\",\"evidence\":\"画面中没有其他动物，也没有可见文字；红球上的凸纹不是文字。\"}],\"priority_fixes\":[],\"revised_prompt\":\"生成一张宠物用品宣传配图。画面中央是一只棕色小狗，狗坐在浅色地毯上，背景为室内白墙。狗的左边有一个蓝色水碗，右边有一个红色玩具球。画面上方留白，不要出现其他动物或文字。\"}"
+      },
+      "feedback_latency_seconds": 9.44,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1540,
+          "promptTokenCount": 60,
+          "totalTokenCount": 1600
+        },
+        "actual_size": [
+          1408,
+          768
+        ]
+      },
+      "draw_latency_seconds": 15.43
+    }
+  },
+  "requested_image_size": "1024x1024",
+  "draw_calls": 3,
+  "attempts": [
+    {
+      "kind": "draw",
+      "branch": "initial",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794136783.390754,
+      "success": true,
+      "latency_seconds": 16.65,
+      "finished_at": 1794136800.040084
+    },
+    {
+      "kind": "feedback",
+      "branch": "gpt",
+      "model": "gpt-6-sol",
+      "started_at": 1794136800.041188,
+      "success": true,
+      "latency_seconds": 12.65,
+      "finished_at": 1794136812.6925068
+    },
+    {
+      "kind": "draw",
+      "branch": "gpt",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794136812.6937332,
+      "success": true,
+      "latency_seconds": 14.41,
+      "finished_at": 1794136827.106873
+    },
+    {
+      "kind": "feedback",
+      "branch": "gemini",
+      "model": "gemini-3.8-flash",
+      "started_at": 1794136827.108456,
+      "success": false,
+      "error": "缺少新提示词",
+      "latency_seconds": 22.44,
+      "finished_at": 1794136849.5519419
+    },
+    {
+      "kind": "feedback",
+      "branch": "gemini",
+      "model": "gemini-3.8-flash",
+      "started_at": 1794136849.552484,
+      "success": false,
+      "error": "缺少新提示词",
+      "latency_seconds": 19.85,
+      "finished_at": 1794136869.398143
+    },
+    {
+      "kind": "feedback",
+      "branch": "deepseek",
+      "model": "deepseek-flash",
+      "started_at": 1794136869.400332,
+      "success": true,
+      "latency_seconds": 9.44,
+      "finished_at": 1794136878.838336
+    },
+    {
+      "kind": "draw",
+      "branch": "deepseek",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794136878.84001,
+      "success": true,
+      "latency_seconds": 15.43,
+      "finished_at": 1794136894.2698822
+    }
+  ],
+  "initial": {
+    "metadata": {
+      "model": "gemini-3.1-flash-image",
+      "usage": {
+        "candidatesTokenCount": 1582,
+        "promptTokenCount": 60,
+        "totalTokenCount": 1642
+      },
+      "actual_size": [
+        1408,
+        768
+      ]
+    },
+    "latency_seconds": 16.65
+  },
+  "actual_image_size": [
+    1408,
+    768
+  ],
+  "finished_at": 1794136894.270568
+}

@@ -1,0 +1,41 @@
+{
+  "model": "gpt-6-sol",
+  "original_requirement": "生成一张横向城市骑行主题扁平插画。画面左侧停着一辆绿色自行车，自行车右侧是一棵黄色树冠的树。远处有灰色建筑轮廓，地面为浅灰色。右上方留白，不要出现人物、文字或品牌标志。",
+  "checklist": [
+    {
+      "id": "C1",
+      "text": "横向构图"
+    },
+    {
+      "id": "C2",
+      "text": "整体为扁平插画"
+    },
+    {
+      "id": "C3",
+      "text": "恰好一辆绿色自行车在左侧"
+    },
+    {
+      "id": "C4",
+      "text": "黄色树冠的树位于自行车右侧"
+    },
+    {
+      "id": "C5",
+      "text": "远处有灰色建筑轮廓"
+    },
+    {
+      "id": "C6",
+      "text": "地面为浅灰色"
+    },
+    {
+      "id": "C7",
+      "text": "右上方留白"
+    },
+    {
+      "id": "C8",
+      "text": "没有人物、可见文字或品牌标志"
+    }
+  ],
+  "system_instruction": "Inspect the actual image against every checklist item. Return JSON only: checks [{id,status,evidence}], priority_fixes [string], revised_prompt string. status must be pass, fail, or uncertain. Include at most two priority fixes. If all requirements pass, do not invent problems. Preserve all original requirements. Do not invent visual evidence.",
+  "image_path": "../initial.png",
+  "image_sha256": "1ad10f03bbfebc9385037999169d354062809b38e4cbbed75be83f65a9f65996"
+}

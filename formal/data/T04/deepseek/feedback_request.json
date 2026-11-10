@@ -1,0 +1,41 @@
+{
+  "model": "deepseek-flash",
+  "original_requirement": "生成一张横向扁平插画：草地上有一顶橙色帐篷，帐篷右侧恰好两把折叠椅，一把蓝色、一把黄色。帐篷后方有三棵松树。天空浅蓝色，画面左上角保持空白，不要出现人物或文字。",
+  "checklist": [
+    {
+      "id": "C1",
+      "text": "横向扁平插画"
+    },
+    {
+      "id": "C2",
+      "text": "恰好一顶橙色帐篷"
+    },
+    {
+      "id": "C3",
+      "text": "两把折叠椅在帐篷右侧"
+    },
+    {
+      "id": "C4",
+      "text": "一把椅子蓝色"
+    },
+    {
+      "id": "C5",
+      "text": "另一把椅子黄色"
+    },
+    {
+      "id": "C6",
+      "text": "帐篷后方恰好三棵松树"
+    },
+    {
+      "id": "C7",
+      "text": "浅蓝天空且左上角留白"
+    },
+    {
+      "id": "C8",
+      "text": "没有人物或可见文字"
+    }
+  ],
+  "system_instruction": "Inspect the actual image against every checklist item. Return JSON only: checks [{id,status,evidence}], priority_fixes [string], revised_prompt string. status must be pass, fail, or uncertain. Include at most two priority fixes. If all requirements pass, do not invent problems. Preserve all original requirements. Do not invent visual evidence.",
+  "image_path": "../initial.png",
+  "image_sha256": "d5ca1073960ccab3347ee9dcb5f4deb80800c0a0f4fdd8d3dbd887f222be37c5"
+}

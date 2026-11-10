@@ -1,0 +1,190 @@
+{
+  "task_id": "T07",
+  "dataset": "formal",
+  "fixed_version": "formal-prep-20261108-v1",
+  "mock": false,
+  "started_at": 1794137201.208072,
+  "draw_model": "gemini-3.1-flash-image",
+  "branches": {
+    "gpt": {
+      "model": "gpt-6-sol",
+      "feedback_metadata": {
+        "model": "gpt-6-sol",
+        "usage": {
+          "completion_tokens": 459,
+          "total_tokens": 6399,
+          "prompt_tokens": 5940,
+          "prompt_tokens_details": {
+            "cached_tokens": 4224
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 127
+          }
+        },
+        "raw_response": "{\"checks\":[{\"id\":\"C1\",\"status\":\"pass\",\"evidence\":\"画面为明显的横向构图。\"},{\"id\":\"C2\",\"status\":\"pass\",\"evidence\":\"整体采用色块、简化形状和清晰轮廓构成的扁平插画风格。\"},{\"id\":\"C3\",\"status\":\"pass\",\"evidence\":\"画面左侧可见恰好一辆绿色自行车。\"},{\"id\":\"C4\",\"status\":\"pass\",\"evidence\":\"黄色树冠的树位于自行车右侧，树干在自行车后方偏右。\"},{\"id\":\"C5\",\"status\":\"pass\",\"evidence\":\"中远景可见多栋灰色城市建筑轮廓。\"},{\"id\":\"C6\",\"status\":\"pass\",\"evidence\":\"底部地面区域为浅灰色。\"},{\"id\":\"C7\",\"status\":\"pass\",\"evidence\":\"右上方为大面积无遮挡的浅蓝天空留白。\"},{\"id\":\"C8\",\"status\":\"pass\",\"evidence\":\"画面中未见人物、可见文字或品牌标志。\"}],\"priority_fixes\":[],\"revised_prompt\":\"生成一张横向城市骑行主题扁平插画。画面左侧停着恰好一辆绿色自行车，自行车右侧是一棵黄色树冠的树。远处有灰色建筑轮廓，地面为浅灰色。右上方保留大面积留白，不要出现人物、文字或品牌标志。\"}"
+      },
+      "feedback_latency_seconds": 24.02,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1515,
+          "promptTokenCount": 66,
+          "totalTokenCount": 1581
+        },
+        "actual_size": [
+          1376,
+          768
+        ]
+      },
+      "draw_latency_seconds": 16.36
+    },
+    "gemini": {
+      "model": "gemini-3.8-flash",
+      "feedback_metadata": {
+        "model": "gemini-3.8-flash",
+        "usage": {
+          "candidatesTokenCount": 399,
+          "promptTokenCount": 1387,
+          "thoughtsTokenCount": 446,
+          "totalTokenCount": 2232
+        },
+        "raw_response": "```json\n{\n  \"checks\": [\n    {\n      \"id\": \"C1\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面为横向宽屏构图。\"\n    },\n    {\n      \"id\": \"C2\",\n      \"status\": \"pass\",\n      \"evidence\": \"整体呈现扁平矢量插画风格。\"\n    },\n    {\n      \"id\": \"C3\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面左侧有一辆绿色自行车。\"\n    },\n    {\n      \"id\": \"C4\",\n      \"status\": \"pass\",\n      \"evidence\": \"自行车右后侧立有一棵黄色树冠的树木。\"\n    },\n    {\n      \"id\": \"C5\",\n      \"status\": \"pass\",\n      \"evidence\": \"背景为灰色城市建筑轮廓。\"\n    },\n    {\n      \"id\": \"C6\",\n      \"status\": \"pass\",\n      \"evidence\": \"前景地面采用浅灰色设计。\"\n    },\n    {\n      \"id\": \"C7\",\n      \"status\": \"pass\",\n      \"evidence\": \"右上角天空区域大面积留白。\"\n    },\n    {\n      \"id\": \"C8\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面无人物、文字及品牌标志。\"\n    }\n  ],\n  \"priority_fixes\": [],\n  \"revised_prompt\": \"生成一张横向城市骑行主题扁平插画。画面左侧停着一辆绿色自行车，自行车右侧是一棵黄色树冠的树。远处有灰色建筑轮廓，地面为浅灰色。右上方留白，不要出现人物、文字或品牌标志。\"\n}\n```"
+      },
+      "feedback_latency_seconds": 17.53,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1504,
+          "promptTokenCount": 61,
+          "totalTokenCount": 1565
+        },
+        "actual_size": [
+          1376,
+          768
+        ]
+      },
+      "draw_latency_seconds": 14.89
+    },
+    "deepseek": {
+      "model": "deepseek-flash",
+      "feedback_metadata": {
+        "model": "deepseek-flash",
+        "usage": {
+          "prompt_tokens": 957,
+          "completion_tokens": 743,
+          "total_tokens": 1700,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 461
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 957
+        },
+        "raw_response": "{\"checks\":[{\"id\":\"C1\",\"status\":\"pass\",\"evidence\":\"画面为16:9横向构图，符合横向插画要求。\"},{\"id\":\"C2\",\"status\":\"pass\",\"evidence\":\"整体采用扁平的矢量插画风格，由纯色色块和简洁轮廓构成。\"},{\"id\":\"C3\",\"status\":\"pass\",\"evidence\":\"画面左侧仅有一辆绿色自行车，且处于停放状态。\"},{\"id\":\"C4\",\"status\":\"pass\",\"evidence\":\"黄色树冠的树位于自行车车身右侧，树干在自行车前轮旁。\"},{\"id\":\"C5\",\"status\":\"pass\",\"evidence\":\"中远景可见成排灰色建筑轮廓，包括高楼和带柱建筑。\"},{\"id\":\"C6\",\"status\":\"pass\",\"evidence\":\"前景地面为浅灰色，并带有淡淡的阴影线条。\"},{\"id\":\"C7\",\"status\":\"pass\",\"evidence\":\"画面右上方为纯浅蓝色天空，没有物体占据。\"},{\"id\":\"C8\",\"status\":\"pass\",\"evidence\":\"画面中没有人物，也没有可见文字或品牌标志。\"}],\"priority_fixes\":[],\"revised_prompt\":\"生成一张横向城市骑行主题扁平插画。画面左侧停着一辆绿色自行车，自行车右侧是一棵黄色树冠的树。远处有灰色建筑轮廓，地面为浅灰色。右上方留白，不要出现人物、文字或品牌标志。\"}"
+      },
+      "feedback_latency_seconds": 8.2,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1483,
+          "promptTokenCount": 61,
+          "totalTokenCount": 1544
+        },
+        "actual_size": [
+          1376,
+          768
+        ]
+      },
+      "draw_latency_seconds": 17.83
+    }
+  },
+  "requested_image_size": "1024x1024",
+  "draw_calls": 4,
+  "attempts": [
+    {
+      "kind": "draw",
+      "branch": "initial",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794137201.208077,
+      "success": true,
+      "latency_seconds": 12.88,
+      "finished_at": 1794137214.085047
+    },
+    {
+      "kind": "feedback",
+      "branch": "gpt",
+      "model": "gpt-6-sol",
+      "started_at": 1794137214.0868852,
+      "success": true,
+      "latency_seconds": 24.02,
+      "finished_at": 1794137238.103501
+    },
+    {
+      "kind": "draw",
+      "branch": "gpt",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794137238.104835,
+      "success": true,
+      "latency_seconds": 16.36,
+      "finished_at": 1794137254.4641569
+    },
+    {
+      "kind": "feedback",
+      "branch": "gemini",
+      "model": "gemini-3.8-flash",
+      "started_at": 1794137254.46717,
+      "success": true,
+      "latency_seconds": 17.53,
+      "finished_at": 1794137271.99437
+    },
+    {
+      "kind": "draw",
+      "branch": "gemini",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794137271.995648,
+      "success": true,
+      "latency_seconds": 14.89,
+      "finished_at": 1794137286.8830972
+    },
+    {
+      "kind": "feedback",
+      "branch": "deepseek",
+      "model": "deepseek-flash",
+      "started_at": 1794137286.884002,
+      "success": true,
+      "latency_seconds": 8.2,
+      "finished_at": 1794137295.080102
+    },
+    {
+      "kind": "draw",
+      "branch": "deepseek",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794137295.081553,
+      "success": true,
+      "latency_seconds": 17.83,
+      "finished_at": 1794137312.9148319
+    }
+  ],
+  "initial": {
+    "metadata": {
+      "model": "gemini-3.1-flash-image",
+      "usage": {
+        "candidatesTokenCount": 1500,
+        "promptTokenCount": 61,
+        "totalTokenCount": 1561
+      },
+      "actual_size": [
+        1376,
+        768
+      ]
+    },
+    "latency_seconds": 12.88
+  },
+  "actual_image_size": [
+    1376,
+    768
+  ],
+  "finished_at": 1794137312.915534
+}

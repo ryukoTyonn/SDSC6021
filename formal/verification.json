@@ -1,0 +1,392 @@
+[
+  {
+    "task_id": "T01",
+    "complete": true,
+    "errors": [],
+    "configured_size": "1024x1024",
+    "wire_size_parameter": null,
+    "actual_sizes": {
+      "initial": [
+        1376,
+        768
+      ],
+      "gpt": [
+        1376,
+        768
+      ],
+      "gemini": [
+        1376,
+        768
+      ],
+      "deepseek": [
+        1376,
+        768
+      ]
+    },
+    "initial_sha256": "f86df5801d3d682c3da7aa354f248c09c22ddf2dd82743a603340b3000c54db4",
+    "attempts": 7,
+    "failed_attempts": [],
+    "disagreements": [
+      {
+        "check_id": "C7",
+        "text": "一盆小型绿植位于书后方",
+        "votes": {
+          "gpt": "pass",
+          "gemini": "fail",
+          "deepseek": "fail"
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "T02",
+    "complete": true,
+    "errors": [],
+    "configured_size": "1024x1024",
+    "wire_size_parameter": null,
+    "actual_sizes": {
+      "initial": [
+        1408,
+        768
+      ],
+      "gpt": [
+        1408,
+        768
+      ],
+      "gemini": [
+        1408,
+        768
+      ],
+      "deepseek": [
+        1408,
+        768
+      ]
+    },
+    "initial_sha256": "ef4f3db75ca0e3b3280edc3cbbc21002aef17c4509c614938136e2692ba2b97f",
+    "attempts": 7,
+    "failed_attempts": [],
+    "disagreements": []
+  },
+  {
+    "task_id": "T03",
+    "complete": false,
+    "errors": [
+      "gemini: missing image",
+      "gemini: FileNotFoundError(2, 'No such file or directory')"
+    ],
+    "configured_size": "1024x1024",
+    "wire_size_parameter": null,
+    "actual_sizes": {
+      "initial": [
+        1408,
+        768
+      ],
+      "gpt": [
+        1408,
+        768
+      ],
+      "deepseek": [
+        1408,
+        768
+      ]
+    },
+    "initial_sha256": "67107de92986ebdffd7807863c21d05d02e929d2cf45a2777327f93614cf0b7d",
+    "attempts": 7,
+    "failed_attempts": [
+      {
+        "kind": "feedback",
+        "branch": "gemini",
+        "model": "gemini-3.8-flash",
+        "started_at": 1794136827.108456,
+        "success": false,
+        "error": "缺少新提示词",
+        "latency_seconds": 22.44,
+        "finished_at": 1794136849.5519419
+      },
+      {
+        "kind": "feedback",
+        "branch": "gemini",
+        "model": "gemini-3.8-flash",
+        "started_at": 1794136849.552484,
+        "success": false,
+        "error": "缺少新提示词",
+        "latency_seconds": 19.85,
+        "finished_at": 1794136869.398143
+      }
+    ],
+    "disagreements": []
+  },
+  {
+    "task_id": "T04",
+    "complete": true,
+    "errors": [],
+    "configured_size": "1024x1024",
+    "wire_size_parameter": null,
+    "actual_sizes": {
+      "initial": [
+        1376,
+        768
+      ],
+      "gpt": [
+        1584,
+        672
+      ],
+      "gemini": [
+        1376,
+        768
+      ],
+      "deepseek": [
+        1376,
+        768
+      ]
+    },
+    "initial_sha256": "d5ca1073960ccab3347ee9dcb5f4deb80800c0a0f4fdd8d3dbd887f222be37c5",
+    "attempts": 7,
+    "failed_attempts": [],
+    "disagreements": [
+      {
+        "check_id": "C6",
+        "text": "帐篷后方恰好三棵松树",
+        "votes": {
+          "gpt": "fail",
+          "gemini": "pass",
+          "deepseek": "pass"
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "T05",
+    "complete": true,
+    "errors": [],
+    "configured_size": "1024x1024",
+    "wire_size_parameter": null,
+    "actual_sizes": {
+      "initial": [
+        896,
+        1200
+      ],
+      "gpt": [
+        768,
+        1376
+      ],
+      "gemini": [
+        896,
+        1200
+      ],
+      "deepseek": [
+        896,
+        1200
+      ]
+    },
+    "initial_sha256": "f5e183703b2165482f006ccc6d0d4cbec70818482859ed403db3f7c47e4e7e48",
+    "attempts": 7,
+    "failed_attempts": [],
+    "disagreements": []
+  },
+  {
+    "task_id": "T06",
+    "complete": false,
+    "errors": [
+      "gpt: missing image",
+      "gpt: FileNotFoundError(2, 'No such file or directory')"
+    ],
+    "configured_size": "1024x1024",
+    "wire_size_parameter": null,
+    "actual_sizes": {
+      "initial": [
+        1408,
+        768
+      ],
+      "gemini": [
+        1408,
+        768
+      ],
+      "deepseek": [
+        1408,
+        768
+      ]
+    },
+    "initial_sha256": "2b34f13298011c788becda8b5b7a16115a4bbf3c54ce1e2bb3b10fd845f60691",
+    "attempts": 7,
+    "failed_attempts": [
+      {
+        "kind": "feedback",
+        "branch": "gpt",
+        "model": "gpt-6-sol",
+        "started_at": 1794137115.187233,
+        "success": false,
+        "error": "缺少新提示词",
+        "latency_seconds": 11.37,
+        "finished_at": 1794137126.55406
+      },
+      {
+        "kind": "feedback",
+        "branch": "gpt",
+        "model": "gpt-6-sol",
+        "started_at": 1794137126.554471,
+        "success": false,
+        "error": "缺少新提示词",
+        "latency_seconds": 10.6,
+        "finished_at": 1794137137.1513689
+      }
+    ],
+    "disagreements": []
+  },
+  {
+    "task_id": "T07",
+    "complete": true,
+    "errors": [],
+    "configured_size": "1024x1024",
+    "wire_size_parameter": null,
+    "actual_sizes": {
+      "initial": [
+        1376,
+        768
+      ],
+      "gpt": [
+        1376,
+        768
+      ],
+      "gemini": [
+        1376,
+        768
+      ],
+      "deepseek": [
+        1376,
+        768
+      ]
+    },
+    "initial_sha256": "1ad10f03bbfebc9385037999169d354062809b38e4cbbed75be83f65a9f65996",
+    "attempts": 7,
+    "failed_attempts": [],
+    "disagreements": []
+  },
+  {
+    "task_id": "T08",
+    "complete": false,
+    "errors": [
+      "gemini: missing image",
+      "gemini: FileNotFoundError(2, 'No such file or directory')"
+    ],
+    "configured_size": "1024x1024",
+    "wire_size_parameter": null,
+    "actual_sizes": {
+      "initial": [
+        1408,
+        768
+      ],
+      "gpt": [
+        1408,
+        768
+      ],
+      "deepseek": [
+        1408,
+        768
+      ]
+    },
+    "initial_sha256": "e352a3978c45e8b46e698439fe16cd7d1827841dd4eb9c0c04c80519525e2c0d",
+    "attempts": 7,
+    "failed_attempts": [
+      {
+        "kind": "feedback",
+        "branch": "gemini",
+        "model": "gemini-3.8-flash",
+        "started_at": 1794137376.806866,
+        "success": false,
+        "error": "缺少新提示词",
+        "latency_seconds": 17.08,
+        "finished_at": 1794137393.889235
+      },
+      {
+        "kind": "feedback",
+        "branch": "gemini",
+        "model": "gemini-3.8-flash",
+        "started_at": 1794137393.889757,
+        "success": false,
+        "error": "缺少新提示词",
+        "latency_seconds": 19.02,
+        "finished_at": 1794137412.9070342
+      }
+    ],
+    "disagreements": []
+  },
+  {
+    "task_id": "T09",
+    "complete": true,
+    "errors": [],
+    "configured_size": "1024x1024",
+    "wire_size_parameter": null,
+    "actual_sizes": {
+      "initial": [
+        1408,
+        768
+      ],
+      "gpt": [
+        1408,
+        768
+      ],
+      "gemini": [
+        1408,
+        768
+      ],
+      "deepseek": [
+        1408,
+        768
+      ]
+    },
+    "initial_sha256": "6ffcba0bbb4d176c004e2d10bbe2aa6cd9960a0b1022d53bbc49d639dd0f758b",
+    "attempts": 7,
+    "failed_attempts": [],
+    "disagreements": [
+      {
+        "check_id": "C4",
+        "text": "水壶在鞋子前方",
+        "votes": {
+          "gpt": "uncertain",
+          "gemini": "fail",
+          "deepseek": "uncertain"
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "T10",
+    "complete": true,
+    "errors": [],
+    "configured_size": "1024x1024",
+    "wire_size_parameter": null,
+    "actual_sizes": {
+      "initial": [
+        768,
+        1376
+      ],
+      "gpt": [
+        768,
+        1376
+      ],
+      "gemini": [
+        768,
+        1376
+      ],
+      "deepseek": [
+        768,
+        1376
+      ]
+    },
+    "initial_sha256": "fba6f990f0726dba0e9b238f3ef49420a93c94b99f4747284c7acd60647aabf8",
+    "attempts": 7,
+    "failed_attempts": [],
+    "disagreements": [
+      {
+        "check_id": "C7",
+        "text": "淡粉背景且上半部留白",
+        "votes": {
+          "gpt": "uncertain",
+          "gemini": "pass",
+          "deepseek": "pass"
+        }
+      }
+    ]
+  }
+]

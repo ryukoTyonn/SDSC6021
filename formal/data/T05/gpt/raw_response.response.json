@@ -1,0 +1,30 @@
+{
+  "id": "resp_031583e60212b5f8016af05bbca13487d1a373ee837b2c9ccb",
+  "object": "chat.completion",
+  "created": 1794137020,
+  "model": "gpt-6-sol",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"checks\": [\n    {\n      \"id\": \"C1\",\n      \"status\": \"pass\",\n      \"evidence\": \"早餐摆放在浅色木桌上。\"\n    },\n    {\n      \"id\": \"C2\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面中有一个白色盘子。\"\n    },\n    {\n      \"id\": \"C3\",\n      \"status\": \"pass\",\n      \"evidence\": \"盘内可见两片吐司。\"\n    },\n    {\n      \"id\": \"C4\",\n      \"status\": \"pass\",\n      \"evidence\": \"盘内有一个完整的煎蛋。\"\n    },\n    {\n      \"id\": \"C5\",\n      \"status\": \"pass\",\n      \"evidence\": \"一杯橙汁位于盘子右侧。\"\n    },\n    {\n      \"id\": \"C6\",\n      \"status\": \"pass\",\n      \"evidence\": \"橙汁杯左侧没有其他饮品。\"\n    },\n    {\n      \"id\": \"C7\",\n      \"status\": \"pass\",\n      \"evidence\": \"背景为奶油色，画面上方留有大块空白。\"\n    },\n    {\n      \"id\": \"C8\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面中没有可见文字。\"\n    }\n  ],\n  \"priority_fixes\": [],\n  \"revised_prompt\": \"生成一张简洁的早餐海报底图。浅色木桌上有一个白色盘子，盘子内恰好两片吐司和一个完整的煎蛋。盘子右侧是一杯橙汁，杯子左侧没有其他饮品。背景为奶油色，上方留白，画面中不出现文字。\"\n}",
+        "reasoning_content": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "native_finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 401,
+    "total_tokens": 6381,
+    "prompt_tokens": 5980,
+    "prompt_tokens_details": {
+      "cached_tokens": 4224
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  }
+}

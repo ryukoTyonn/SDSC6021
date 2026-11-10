@@ -1,0 +1,41 @@
+{
+  "model": "deepseek-flash",
+  "original_requirement": "生成一张茶具静物配图。深色木桌上恰好有一个白色茶壶和两个小茶杯；茶壶位于两个茶杯后方，左侧茶杯为蓝色，右侧茶杯为白色。背景为浅米色，不要出现茶叶包装、文字或人物。",
+  "checklist": [
+    {
+      "id": "C1",
+      "text": "深色木桌"
+    },
+    {
+      "id": "C2",
+      "text": "恰好一个白色茶壶"
+    },
+    {
+      "id": "C3",
+      "text": "恰好两个小茶杯"
+    },
+    {
+      "id": "C4",
+      "text": "茶壶位于两杯后方"
+    },
+    {
+      "id": "C5",
+      "text": "左侧茶杯为蓝色"
+    },
+    {
+      "id": "C6",
+      "text": "右侧茶杯为白色"
+    },
+    {
+      "id": "C7",
+      "text": "背景为浅米色"
+    },
+    {
+      "id": "C8",
+      "text": "没有茶叶包装、可见文字或人物"
+    }
+  ],
+  "system_instruction": "Inspect the actual image against every checklist item. Return JSON only: checks [{id,status,evidence}], priority_fixes [string], revised_prompt string. status must be pass, fail, or uncertain. Include at most two priority fixes. If all requirements pass, do not invent problems. Preserve all original requirements. Do not invent visual evidence.",
+  "image_path": "../initial.png",
+  "image_sha256": "e352a3978c45e8b46e698439fe16cd7d1827841dd4eb9c0c04c80519525e2c0d"
+}

@@ -1,0 +1,24 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"checks\": [\n    {\"id\": \"C1\", \"status\": \"pass\", \"evidence\": \"画面中有且仅有一双白色跑鞋。\"},\n    {\"id\": \"C2\", \"status\": \"pass\", \"evidence\": \"跑鞋置于浅灰色地面上。\"},\n    {\"id\": \"C3\", \"status\": \"pass\", \"evidence\": \"仅有一只蓝色水壶。\"},\n    {\"id\": \"C4\", \"status\": \"fail\", \"evidence\": \"水壶位于跑鞋右侧而非正前方。\"},\n    {\"id\": \"C5\", \"status\": \"pass\", \"evidence\": \"橙色毛巾位于水壶右侧。\"},\n    {\"id\": \"C6\", \"status\": \"pass\", \"evidence\": \"所有物品完整显示无遮挡裁切。\"},\n    {\"id\": \"C7\", \"status\": \"pass\", \"evidence\": \"背景为纯白墙面且左上方有充足留白。\"},\n    {\"id\": \"C8\", \"status\": \"fail\", \"evidence\": \"水壶瓶身印有品牌标识与容量刻度文字。\"}\n  ],\n  \"priority_fixes\": [\n    \"将蓝色水壶放置在白色跑鞋的正前方，而非右侧并排。\",\n    \"去除水壶表面及跑鞋上的所有品牌商标、刻度及文字。\"\n  ],\n  \"revised_prompt\": \"运动装备展示图，无人物，无任何文字或商标。纯白色背景，左上方大面积留白。浅灰水泥地面上，后方放置一双白色跑鞋，跑鞋的正前方放置一只纯净无图案文字的蓝色水壶，水壶右侧平整叠放一条橙色毛巾，所有物品完整清晰可见。\"\n}\n```",
+            "thoughtSignature": "ErQLCrELAWkUfRMlvWx15Bg/98D2JYK3abc32VQjerbAjVEopHpAvSErwcAkXtKtPN29a2yZcgL0ILgvdiwBGh0nYOmkDrPhrKTy2qlW5sEN5F2V3+As4TOAGIXmmolap+gR9Z3IyPdX19wX+IwggfrOo9y7EOdTBJKPEw20I4F4FwtVjjbPIQ/fUq/mcizlTTj78rDsHoy46jO86Alo0FsHWZsvsEt7ieQoIOsMCPr0WF6Rl72OmX+7UHNQFhUhBeC/8TuV1yeTLzRpa1w3apoCnzvcCn8KQDULVypqS+omC17olpl+LgBH8w95KRxamv8hDAJCosI5ygRXmWc8ZAkNruDfmR/vHcv4wRznbmsSk5Se0jeyO3uV806cW+7lW2/CA36qWYqMOZMmzxSZIBGGBOR2TPxx7QmnUXF/0d5Q5eP42dgHEL+Snhth3lPmTvn7reIBtr7MjJINrsnL+iM5xr1LGIolnzO15PnFsm9ncJPxMGrDNUmHnArDlLsWxz/ML5kx8Lsil7WL9N9nCzkoWtCB8HPryKTomswdVBopMATLFawPKVRuRRl8qOPcM7+sHJsPAjaScZAjOKYWeCanJ4Y/wfHpPqJm2r73JR9/nY845O5mhuwNuR572ldL6rsh4/f/V5wnhWSQkxS2eMEzaky7GQAHwEAb4nHnxH6qufMXghi4xzrxbGEAJWqWJQXLwQCwX3S93z9kOIv8KAgbhk4tZwHu/1ogNlJ0kWWufPmIVJ7sUeDcboU2cM7ngJ4YsZ50Ho/TsZFo0W8JtcIoZp4Dkb25KdugxbHxWSC24Qy/Jc6or4gTIG4tKGse1x4DN4+MDKT41P1fyAEgFRwCfZJGsLT+9E3FPiChIarHs+rprzhstb4ldHmW5r+GsDVHcEJ0AkWjU0AKb5EPI5fTS9oKjvbIylbs44HmRfmZzIRpLhQJ/+aPQFlXA9/iPtRIrsy6ej7svldH1i0lYoWHC+K7wihD7mD1atwozCndVSxchJXgPDey2Sd2ZhU2vc3lkLZiwYdxTAagiLcEXc95LK0kgNNvCCGKsovL2fce/rWNj7iR1eyKxWYUS85adtn9/qugzv6jeH7EFHuFiIq+BKkIhEFecofsn3aoNUFAbXkQWCV+7ws2UJExtu3Zv8/7ZWIiYTJqSGIR9P21s4ye89pNGqSXYCzJ6L0MjDGQlzRe4wXeF0hQz1295g6CbRAWvdzsOi7vXcy17nwd9GWcM6x18VW6hpTJhzeo0EdvE3cOuBVwGw7/Pn84t5Px+KlVQJ7GoOGN/gSe4W8eYQoVII0aR4BOA5mIb0F9glXvFGqWiJEcIi9V8nyGI/K3y6R/76fAz2UTxXDq825UtGLmEsRm6SQ+czwRByl5yzY7wLfV2lAjKlBE3hY+wcHhHk2zn71kMA/57Jn+PwA1sjnTLk/omai40tvxOZYDgMkUo2YH7+MUNvzDYj3NBSYh4Y/XR7t16DH3rbdqXPA6JA7zz8U9PkFvcrpuXWybc0W0sHOq1pezIeAiWPdfeOS9Q6wUoPbngGqwpR+1MzWXYeI6U6rau9TPOF4ZKnMN3sTPFqEQHQYIbkvGaG306406ywZhBra0rKDLW6ZfSomwYDSBeUXemnPSJLNFu6S2Aj2ggIOuVc50nlcQHuJNNRJm7jyTvdKDuzHZCiIzYlqrMRqPEAB3fIA6I6Jryz8XQSkrdmEDqxSjsDoc0KgZLXexx5HQA+1VU2rp+D0nq93L7mYt8C9yr5e9tBuj8mFlzfgKQh7cWYGWimSO1un9gGh13OramFHhBM5nIDzRdJgHU29/faEc2NhAmlHh6mYBAiGvYY797HCLh36SkyQ4Mb1rv3K6AvMOq7CIlFbqDTeVjtkbESHehmZ1Tt4gxcFeP+QKktZRuGKtj6LyD/osulg5EKmHRr/QYxS9Z7bSCxhONhyiAqdn2C0="
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP"
+    }
+  ],
+  "modelVersion": "gemini-3.8-flash",
+  "responseId": "m13wavDiLY-PytMP9rOr8A0",
+  "usageMetadata": {
+    "candidatesTokenCount": 399,
+    "promptTokenCount": 1369,
+    "thoughtsTokenCount": 367,
+    "totalTokenCount": 2135
+  }
+}

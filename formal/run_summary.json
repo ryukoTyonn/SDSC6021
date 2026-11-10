@@ -1,0 +1,119 @@
+{
+  "tasks": 10,
+  "complete_tasks": 7,
+  "images": 37,
+  "valid_feedback_and_prompts": 27,
+  "branches_with_raw_feedback": 30,
+  "requests": 70,
+  "draw_requests": 37,
+  "feedback_requests": 33,
+  "failed_validation_attempts": 6,
+  "http_errors": 0,
+  "invalid_branches": [
+    {
+      "task_id": "T03",
+      "role": "gemini",
+      "reason": "revised_prompt empty",
+      "checks_retained": 8
+    },
+    {
+      "task_id": "T06",
+      "role": "gpt",
+      "reason": "revised_prompt empty",
+      "checks_retained": 8
+    },
+    {
+      "task_id": "T08",
+      "role": "gemini",
+      "reason": "revised_prompt empty",
+      "checks_retained": 8
+    }
+  ],
+  "disagreements": [
+    {
+      "task_id": "T01",
+      "check_id": "C7",
+      "text": "一盆小型绿植位于书后方",
+      "votes": {
+        "gpt": "pass",
+        "gemini": "fail",
+        "deepseek": "fail"
+      },
+      "note": "failed branch uses last raw response; descriptive only"
+    },
+    {
+      "task_id": "T04",
+      "check_id": "C6",
+      "text": "帐篷后方恰好三棵松树",
+      "votes": {
+        "gpt": "fail",
+        "gemini": "pass",
+        "deepseek": "pass"
+      },
+      "note": "failed branch uses last raw response; descriptive only"
+    },
+    {
+      "task_id": "T09",
+      "check_id": "C4",
+      "text": "水壶在鞋子前方",
+      "votes": {
+        "gpt": "uncertain",
+        "gemini": "fail",
+        "deepseek": "uncertain"
+      },
+      "note": "failed branch uses last raw response; descriptive only"
+    },
+    {
+      "task_id": "T10",
+      "check_id": "C7",
+      "text": "淡粉背景且上半部留白",
+      "votes": {
+        "gpt": "uncertain",
+        "gemini": "pass",
+        "deepseek": "pass"
+      },
+      "note": "failed branch uses last raw response; descriptive only"
+    }
+  ],
+  "returned_model_ids": {
+    "draw": [
+      "gemini-3.1-flash-image"
+    ],
+    "gpt": [
+      "gpt-6-sol"
+    ],
+    "gemini": [
+      "gemini-3.8-flash"
+    ],
+    "deepseek": [
+      "deepseek-flash"
+    ]
+  },
+  "actual_sizes": [
+    [
+      768,
+      1376
+    ],
+    [
+      896,
+      1200
+    ],
+    [
+      1376,
+      768
+    ],
+    [
+      1408,
+      768
+    ],
+    [
+      1584,
+      672
+    ]
+  ],
+  "configured_size": "1024x1024",
+  "wire_size_parameter": null,
+  "cost": null,
+  "cost_note": "provider pricing unavailable; use actual billing",
+  "random_control": false
+}

@@ -1,0 +1,46 @@
+{
+  "checks": [
+    {
+      "id": "C1",
+      "status": "pass",
+      "evidence": "画面为明显的横向构图。"
+    },
+    {
+      "id": "C2",
+      "status": "pass",
+      "evidence": "三本书下方的窗台为木质，具有清晰木纹。"
+    },
+    {
+      "id": "C3",
+      "status": "pass",
+      "evidence": "画面中恰好有三本合上的书。"
+    },
+    {
+      "id": "C4",
+      "status": "pass",
+      "evidence": "左侧书籍为蓝色。"
+    },
+    {
+      "id": "C5",
+      "status": "pass",
+      "evidence": "中间书籍为绿色。"
+    },
+    {
+      "id": "C6",
+      "status": "pass",
+      "evidence": "右侧书籍为红色。"
+    },
+    {
+      "id": "C7",
+      "status": "pass",
+      "evidence": "一盆小型绿植位于三本书后方。"
+    },
+    {
+      "id": "C8",
+      "status": "pass",
+      "evidence": "主体后方为浅灰色区域，右上方有大面积留白；书封上的图案和徽章不构成可读文字。"
+    }
+  ],
+  "priority_fixes": [],
+  "revised_prompt": "生成一张横向书店橱窗宣传配图。木质窗台上恰好摆放三本合上的书：左边蓝色，中间绿色，右边红色；书后方是一盆小型绿植。背景为浅灰色，画面右上方留白用于后续添加标题。不要出现可读文字。"
+}

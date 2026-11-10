@@ -1,0 +1,24 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"checks\": [\n    {\n      \"id\": \"C1\",\n      \"status\": \"pass\",\n      \"evidence\": \"顶部垂直俯拍视角。\"\n    },\n    {\n      \"id\": \"C2\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面中央展开着一本笔记本。\"\n    },\n    {\n      \"id\": \"C3\",\n      \"status\": \"pass\",\n      \"evidence\": \"展开的页面纯净无书写痕迹。\"\n    },\n    {\n      \"id\": \"C4\",\n      \"status\": \"pass\",\n      \"evidence\": \"笔记本左侧摆放黑色钢笔。\"\n    },\n    {\n      \"id\": \"C5\",\n      \"status\": \"pass\",\n      \"evidence\": \"笔记本右侧为蓝色头戴式耳机。\"\n    },\n    {\n      \"id\": \"C6\",\n      \"status\": \"pass\",\n      \"evidence\": \"右上角有带拉花的咖啡杯。\"\n    },\n    {\n      \"id\": \"C7\",\n      \"status\": \"pass\",\n      \"evidence\": \"桌面材质为浅色木质纹理。\"\n    },\n    {\n      \"id\": \"C8\",\n      \"status\": \"pass\",\n      \"evidence\": \"无手部、人物及文字元素。\"\n    }\n  ],\n  \"priority_fixes\": [],\n  \"revised_prompt\": \"生成一张俯视办公桌配图。桌面中央是一本打开的空白笔记本，笔记本左侧是一支黑色钢笔，右侧是一副蓝色耳机。桌面为浅木色，右上角有一杯咖啡。不要出现手、人物或任何可读文字。\"\n}\n```",
+            "thoughtSignature": "EvEKCu4KAWkUfRP9/3hDb+C3Ild1OkoLozsRwMiC8D6L6/CxElD4jKzF0V8bbz9GpTFCCZGg71lYgDcIpWB/41wTepo66zBMYYS+4cE+ConL0Jjs2e9HQAU6FjNjQaQEDzNpjD2a6JehzK3t1KgBjl+E9ePy/HEdHEKsSzgVc0wYbGRpHLKIdGWVLQdkjzo0yHcHC2e0sWiEm9uAYgHLzTVOpPV69wXGmeUmyAYrAElNssGQIfePRWCOgD7K1hqkGNVdmZWosyUFmzXdR2+MrWqdLcnkCJLtrtsE72G071lAthPROyOHJE8L6dxDw5biyk+EjN2I2W/2bqpJksjl/fKA4M4giXnMxb6crmFV13VGlBPYjDTKPnx8g2zlPR5AWbMv0qI9xbChHj9+6O9CqUmQsIp2FNtUzMhtIegf40x29TmAdyaRgYRGgjPoJ9r0XGDJ8vQhZlBPYSw3UAncEkYromknawopOKWx/wkhdhRmRabFbf4ipv5/bdNGH1j2u05D6PBzSc3KNaKTg23qFbGdgqA/kMm/9HJK0nlfr4rXGkW5cbvyLJuvn7/Lws7V6RNzCvK9pqbwVOIin3Q5NIy+OBzSa7ja8Bcrtlbxfz6ROH+dVQ6RBPzwY6pFbinyOYlxJD0waDZbt5bptGDE78oBb8mRZc5eQOxBmO+TSaoy9rx1SUWGPvazsP8UVhBqAJM2klORK7PFH4x4AhXNNay64AlWKzVfpoggxDadJr34/VpWmHQrfTIqhdglCV4NYkgiDC5TTidt0vjylqxOhSr0VRmJuT1VSswY0NL2OtiU70UFsiCDJ2NyW1XkqnEr4ptkujk3y6Yf1jl0HGHPXVewILr5HBL2sbeLoYd4ALcgeSi1zJPSZvyyIa5b3B+4DFnLwOk/JgxqrFy5/M0ao7mq5mlPahxuxwnzV54TxpwpIyuJxj+K3pEN9wmgvyfMyHYBKA8p2qSz9BHHqdQIZcRX76DRi8l+UN6z6wqktRZut88OhNt2nU2YJMVo7fCH7PCbA604JshvFWaQ20ZApksh2GBcdqczOlEYt8yKOANDuU1kTVXrInpp4tZ5yF+FJmM8+xHnBAJyxrP3QrqqmKzJ7fDCj0w7icsVbRx39R3rwdKjFD95Wqcgv87dYY1uylPf+nTJS3wguun7C3NPHohfBxZf2RAxrgaqdqF1FaLGedzlIunFLSVWS+uuF9VGaRSdpb3V+4UnR8Yzq/M2jkJcB9YaBmbYxaZIzSiVTJd/SNu69YuafaO63tlu8H0UWuMmKqumK57RbAszg/HSM5yLIPUqkPnUsfq/bhxRCeNXbIyTspU2lmz3zWCZ0J3wFn8X0g6SCo+0PkmzoHgNQm3fi7cDNgLRj/5l+vGeeGruI7PVe5EzHC2X7KoDCX7I5ttEXZ3qVb5lY8NVpX7zVUjCxJbUlL9oIG3LZG4lx7s0jV90BjKJop1Oy+nluGD/XvQrV6Z4oB3siR3/2Kqd4TW+/5olqmW4ylwj4XU7xfDePj3w+XhgOhwAci3NkRYh0c8NRf2zlcIP0m5Id5XugfXI14XrUA6VZLvdW/abCQxglNycGOaF6kJzjq1OuBvSuXYcKiXfRckhKgeoRbRuGVeHH9KgqLyYsgRp7KsP3j3EXsB4c2uNHT0p9t+TeLpAAZ0i8zgeA6WAKkW/nrsedIAIxlGa0hR/guCaSywNbZH8gv+jxD/xPu68u4hkaJ4ERQbckmRFhpZwxr10MOKdptzkJ7gBlsCqO3SklSaXFuk62+1b4Tpxr3V2C31c3Bnlq6FR0bDLgr4K9dZ2rUBr7o+yZirJOp4W46hGXjzXE8ObTI5MJ/1lAZ5WUEvVBsKBpZdJSQ=="
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP"
+    }
+  ],
+  "modelVersion": "gemini-3.8-flash",
+  "responseId": "O1zwauKwGLysqtsP8ojP2Q8",
+  "usageMetadata": {
+    "candidatesTokenCount": 394,
+    "promptTokenCount": 1357,
+    "thoughtsTokenCount": 336,
+    "totalTokenCount": 2087
+  }
+}

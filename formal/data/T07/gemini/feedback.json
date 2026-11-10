@@ -1,0 +1,46 @@
+{
+  "checks": [
+    {
+      "id": "C1",
+      "status": "pass",
+      "evidence": "画面为横向宽屏构图。"
+    },
+    {
+      "id": "C2",
+      "status": "pass",
+      "evidence": "整体呈现扁平矢量插画风格。"
+    },
+    {
+      "id": "C3",
+      "status": "pass",
+      "evidence": "画面左侧有一辆绿色自行车。"
+    },
+    {
+      "id": "C4",
+      "status": "pass",
+      "evidence": "自行车右后侧立有一棵黄色树冠的树木。"
+    },
+    {
+      "id": "C5",
+      "status": "pass",
+      "evidence": "背景为灰色城市建筑轮廓。"
+    },
+    {
+      "id": "C6",
+      "status": "pass",
+      "evidence": "前景地面采用浅灰色设计。"
+    },
+    {
+      "id": "C7",
+      "status": "pass",
+      "evidence": "右上角天空区域大面积留白。"
+    },
+    {
+      "id": "C8",
+      "status": "pass",
+      "evidence": "画面无人物、文字及品牌标志。"
+    }
+  ],
+  "priority_fixes": [],
+  "revised_prompt": "生成一张横向城市骑行主题扁平插画。画面左侧停着一辆绿色自行车，自行车右侧是一棵黄色树冠的树。远处有灰色建筑轮廓，地面为浅灰色。右上方留白，不要出现人物、文字或品牌标志。"
+}

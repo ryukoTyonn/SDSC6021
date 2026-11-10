@@ -1,0 +1,41 @@
+{
+  "model": "gpt-6-sol",
+  "original_requirement": "生成一张运动装备展示图。浅灰地面上恰好有一双白色跑鞋，鞋子前方是一只蓝色水壶，水壶右侧是一条橙色毛巾。背景为纯白色，所有物品完整可见，左上方留白，不要出现人物或文字。",
+  "checklist": [
+    {
+      "id": "C1",
+      "text": "恰好一双两只白色跑鞋"
+    },
+    {
+      "id": "C2",
+      "text": "鞋子位于浅灰地面"
+    },
+    {
+      "id": "C3",
+      "text": "恰好一只蓝色水壶"
+    },
+    {
+      "id": "C4",
+      "text": "水壶在鞋子前方"
+    },
+    {
+      "id": "C5",
+      "text": "橙色毛巾位于水壶右侧"
+    },
+    {
+      "id": "C6",
+      "text": "物品完整可见"
+    },
+    {
+      "id": "C7",
+      "text": "纯白背景且左上方留白"
+    },
+    {
+      "id": "C8",
+      "text": "没有人物或可见文字"
+    }
+  ],
+  "system_instruction": "Inspect the actual image against every checklist item. Return JSON only: checks [{id,status,evidence}], priority_fixes [string], revised_prompt string. status must be pass, fail, or uncertain. Include at most two priority fixes. If all requirements pass, do not invent problems. Preserve all original requirements. Do not invent visual evidence.",
+  "image_path": "../initial.png",
+  "image_sha256": "6ffcba0bbb4d176c004e2d10bbe2aa6cd9960a0b1022d53bbc49d639dd0f758b"
+}

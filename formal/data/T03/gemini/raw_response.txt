@@ -1,0 +1,48 @@
+```json
+{
+  "checks": [
+    {
+      "id": "C1",
+      "status": "pass",
+      "evidence": "中央仅有一只幼犬。"
+    },
+    {
+      "id": "C2",
+      "status": "pass",
+      "evidence": "幼犬毛色呈棕色。"
+    },
+    {
+      "id": "C3",
+      "status": "pass",
+      "evidence": "小狗画面左侧置有蓝色水碗。"
+    },
+    {
+      "id": "C4",
+      "status": "pass",
+      "evidence": "小狗画面右侧置有红色玩具球。"
+    },
+    {
+      "id": "C5",
+      "status": "pass",
+      "evidence": "小狗呈端正坐姿。"
+    },
+    {
+      "id": "C6",
+      "status": "pass",
+      "evidence": "小狗位于浅米色编织地毯上。"
+    },
+    {
+      "id": "C7",
+      "status": "pass",
+      "evidence": "背景为白色墙面，上方区域留白充足。"
+    },
+    {
+      "id": "C8",
+      "status": "pass",
+      "evidence": "无其他动物或文字。"
+    }
+  ],
+  "priority_fixes": [],
+  "revised_prompt": ""
+}
+```

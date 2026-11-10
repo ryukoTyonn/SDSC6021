@@ -1,0 +1,24 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"checks\": [\n    {\"id\": \"C1\", \"status\": \"pass\", \"evidence\": \"深色木质桌面清晰可见\"},\n    {\"id\": \"C2\", \"status\": \"pass\", \"evidence\": \"画面中仅有单个白色茶壶\"},\n    {\"id\": \"C3\", \"status\": \"pass\", \"evidence\": \"前方恰好摆放两只小茶杯\"},\n    {\"id\": \"C4\", \"status\": \"pass\", \"evidence\": \"茶壶位于两只茶杯后方中心偏左\"},\n    {\"id\": \"C5\", \"status\": \"pass\", \"evidence\": \"左侧杯子呈蓝色釉面\"},\n    {\"id\": \"C6\", \"status\": \"pass\", \"evidence\": \"右侧杯子为白色陶瓷\"},\n    {\"id\": \"C7\", \"status\": \"pass\", \"evidence\": \"背景呈现浅米色纯净色调\"},\n    {\"id\": \"C8\", \"status\": \"pass\", \"evidence\": \"无包装、文字及人物出现\"}\n  ],\n  \"priority_fixes\": [],\n  \"revised_prompt\": \"\"\n}\n```",
+            "thoughtSignature": "EsAICr0IAWkUfRNVK46vOXzZY4Oq2aT4m3pvxzhebDyT141KJi5u2mg8DaSTZDeoR7OIbvVNXOpk5SnkxGtDGQBxZB5a1DVDGc5WK1dKxEqAcKhhhv9PHVMdicJS6BkF4m9pMS9+YFF9EFAOTb7gS7ImQbKGuPG+Yl70RSmzETxbVdqSC/ylY7c0+31gV8u2jzMEXgAsqJsqM+gWpWmDeqfgRfFapofwIYrr1xRnHUfIbe7dAQyWRz8EjzqGYig2E3ZEV0SGtaSk/vaOG2N0vQkBJlzjs8VHRp/B8APso6SgwSKLOdJrNLi13q23LCdGFgIn9ECxlNTXYXyI5zmbvY6xV7ix3XdenuWn1lqx9SN5mumDLCVwu4WX+vYuk1YWj1rTSmZ6SxKSmC3p3zFRPjenQeCBPh7pGC0Nf1FHFnS1ynE/QPF2rsAE8ixuD7fzJ8tsIjQcega58x9FDgIeJh6DH4CU191Njs0KdoceWbvxsOR66JbgFDEC0Zfe/782uCmyUUyPsBvB0mXz61V/T1NqCzDx3RiuU/f/VIEqNRxsGsdFM9vXV+SNMkVntr7sioIneM4TPPsneC51lkDFrdrgjKya+Kpns0n6ccMjutKeMljfCzgVzDhNpOb7iCqyJxEvPYLPdNVlHbQS+PUEq6SP0GAZpRLtrFsdlJk3ooBB5Q5jEwq7zMU3rSCHR+WOWtr3KQnMqAOleNeoLnPDLPyK3A+oKhaw3YzRIMuiW0sWJLs1od4MpYrLlkDxOMphZ1d29pSBO3BA+HcsjICbUrbGXqwWWNP63VioPAYeMSEghr3S5C26pbUVLoiz1LWPbO2+CADBDxvd+iS20M0TcorDAQUi6VeNB7aBJQRm3SGc6dWBdZGvz0biUeRTewys4OtYejIKkUi0N/nfOShGjCdR4CNC4vx3sA6NZPW0aFdnOYfXWr+yl9IEnvFO6e3ltJO8ZqXcKZpeZ1ktNcKAL9oH747Zrr+ZDTWDJBhi55DO9GxWE2K8eoSGk4BC99JOpN69zTYDkB0M4gBsLjrqf43V2ebGEhxH1g14B6sSmOh8QuZ5V9VVxTBV4zupEGyTaLj2oBbUjokHU8MgpEpSmcw7C6/9LACDS2PYD5AvhNlUai063Uezb1EMkvvTJQTPzKB4QZuQqwce3yvQnNVvE3APY9ignzf9Wr+Fe9+SRSEa7UOiJk7yF+NnuqluiVo8pw2qUzixRVvwzO0NTBQKzdNFnlJ927URw9b/aBwf1za4OCymuTgvb61d9W2uVOfaD/Q+XvmMZD41Y1M92CAvfZgdQtPvZv2JX8774HS5oZNT0buzIhyD2uJcEwlq3w6V6Ry1Ik8jwjwPgU7rWfYdubVx+I9m72h0IBXpn+Dq1laVIOFR5AUv5/L49p4hQ+S8lzaqeB3iTbnPyMwfSqCPcMuqMKZAoUP7M3AFWlj1zeFEupA="
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP"
+    }
+  ],
+  "modelVersion": "gemini-3.8-flash",
+  "responseId": "O13waqGlBdTUz7IP4uzyyQM",
+  "usageMetadata": {
+    "candidatesTokenCount": 262,
+    "promptTokenCount": 1369,
+    "thoughtsTokenCount": 270,
+    "totalTokenCount": 1901
+  }
+}

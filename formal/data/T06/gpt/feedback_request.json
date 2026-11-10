@@ -1,0 +1,41 @@
+{
+  "model": "gpt-6-sol",
+  "original_requirement": "生成一张俯视办公桌配图。桌面中央是一本打开的空白笔记本，笔记本左侧是一支黑色钢笔，右侧是一副蓝色耳机。桌面为浅木色，右上角有一杯咖啡。不要出现手、人物或任何可读文字。",
+  "checklist": [
+    {
+      "id": "C1",
+      "text": "俯视视角"
+    },
+    {
+      "id": "C2",
+      "text": "一本打开的笔记本位于中央"
+    },
+    {
+      "id": "C3",
+      "text": "笔记本页面空白"
+    },
+    {
+      "id": "C4",
+      "text": "黑色钢笔位于笔记本左侧"
+    },
+    {
+      "id": "C5",
+      "text": "蓝色耳机位于笔记本右侧"
+    },
+    {
+      "id": "C6",
+      "text": "右上角有一杯咖啡"
+    },
+    {
+      "id": "C7",
+      "text": "桌面为浅木色"
+    },
+    {
+      "id": "C8",
+      "text": "没有手、人物或可读文字"
+    }
+  ],
+  "system_instruction": "Inspect the actual image against every checklist item. Return JSON only: checks [{id,status,evidence}], priority_fixes [string], revised_prompt string. status must be pass, fail, or uncertain. Include at most two priority fixes. If all requirements pass, do not invent problems. Preserve all original requirements. Do not invent visual evidence.",
+  "image_path": "../initial.png",
+  "image_sha256": "2b34f13298011c788becda8b5b7a16115a4bbf3c54ce1e2bb3b10fd845f60691"
+}

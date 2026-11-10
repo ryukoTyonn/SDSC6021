@@ -1,0 +1,12 @@
+{
+  "tasks": 10,
+  "base_images": 10,
+  "branch_images": 30,
+  "successful_draws_without_control": 40,
+  "feedback_calls": 30,
+  "optional_control_draws": 30,
+  "successful_draws_with_control": 70,
+  "unit_price": null,
+  "currency": null,
+  "note": "单价和失败重试收费规则未核实，金额不估算；实际请求次数可能因失败或重试增加。"
+}

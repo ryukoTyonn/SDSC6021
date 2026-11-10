@@ -1,0 +1,48 @@
+```json
+{
+  "checks": [
+    {
+      "id": "C1",
+      "status": "pass",
+      "evidence": "顶部垂直俯拍视角。"
+    },
+    {
+      "id": "C2",
+      "status": "pass",
+      "evidence": "画面中央展开着一本笔记本。"
+    },
+    {
+      "id": "C3",
+      "status": "pass",
+      "evidence": "展开的页面纯净无书写痕迹。"
+    },
+    {
+      "id": "C4",
+      "status": "pass",
+      "evidence": "笔记本左侧摆放黑色钢笔。"
+    },
+    {
+      "id": "C5",
+      "status": "pass",
+      "evidence": "笔记本右侧为蓝色头戴式耳机。"
+    },
+    {
+      "id": "C6",
+      "status": "pass",
+      "evidence": "右上角有带拉花的咖啡杯。"
+    },
+    {
+      "id": "C7",
+      "status": "pass",
+      "evidence": "桌面材质为浅色木质纹理。"
+    },
+    {
+      "id": "C8",
+      "status": "pass",
+      "evidence": "无手部、人物及文字元素。"
+    }
+  ],
+  "priority_fixes": [],
+  "revised_prompt": "生成一张俯视办公桌配图。桌面中央是一本打开的空白笔记本，笔记本左侧是一支黑色钢笔，右侧是一副蓝色耳机。桌面为浅木色，右上角有一杯咖啡。不要出现手、人物或任何可读文字。"
+}
+```

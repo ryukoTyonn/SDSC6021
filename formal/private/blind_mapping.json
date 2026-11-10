@@ -1,0 +1,224 @@
+[
+  {
+    "task_id": "T01",
+    "image_code": "A",
+    "source": "initial",
+    "sha256": "f86df5801d3d682c3da7aa354f248c09c22ddf2dd82743a603340b3000c54db4"
+  },
+  {
+    "task_id": "T01",
+    "image_code": "B",
+    "source": "gemini",
+    "sha256": "6dc4b39968d3fb287b5df47c0887f3aa5313b9129c74cc543206dbc99caa463a"
+  },
+  {
+    "task_id": "T01",
+    "image_code": "C",
+    "source": "gpt",
+    "sha256": "43a3670a1286d3cb6422f1e9d40fd4a699a0c46ace63495d554a9211b8105c87"
+  },
+  {
+    "task_id": "T01",
+    "image_code": "D",
+    "source": "deepseek",
+    "sha256": "1334f2b65a20082360051107bdb63b8a290745d170dc9a1b2c457c58cd3aa48a"
+  },
+  {
+    "task_id": "T02",
+    "image_code": "A",
+    "source": "deepseek",
+    "sha256": "ced0a17c8b59c8f6d8eddd9d0b167e51207c29cbc3f4525dfba2c4c5539435d3"
+  },
+  {
+    "task_id": "T02",
+    "image_code": "B",
+    "source": "gpt",
+    "sha256": "f2444c75678895e424b1ca390c4c37142faffd400dda5d7ab35790d44ed72eea"
+  },
+  {
+    "task_id": "T02",
+    "image_code": "C",
+    "source": "gemini",
+    "sha256": "c09c8deae40292c585053101470d40b472cc18fb8396f755187872980d2dffc5"
+  },
+  {
+    "task_id": "T02",
+    "image_code": "D",
+    "source": "initial",
+    "sha256": "ef4f3db75ca0e3b3280edc3cbbc21002aef17c4509c614938136e2692ba2b97f"
+  },
+  {
+    "task_id": "T03",
+    "image_code": "A",
+    "source": "deepseek",
+    "sha256": "d77ac2a3ba69f7966f6233e1824944c6e82eeff4df358ba6f1b22b6b2aa5fce6"
+  },
+  {
+    "task_id": "T03",
+    "image_code": "B",
+    "source": "gpt",
+    "sha256": "e3252d96a62163f34d08d64265a2e8abefc5f604b1dbdb95b5455539d25714ba"
+  },
+  {
+    "task_id": "T03",
+    "image_code": "D",
+    "source": "initial",
+    "sha256": "67107de92986ebdffd7807863c21d05d02e929d2cf45a2777327f93614cf0b7d"
+  },
+  {
+    "task_id": "T04",
+    "image_code": "A",
+    "source": "gemini",
+    "sha256": "b920f319a08470200da3c25c5c471c1d3d3d69e7526acbfd8908f181dc70fe0b"
+  },
+  {
+    "task_id": "T04",
+    "image_code": "B",
+    "source": "gpt",
+    "sha256": "256f789fc212b9e6e87e2e3af3f64011b2c6b6ffc155cf9583f42bb025b57e4d"
+  },
+  {
+    "task_id": "T04",
+    "image_code": "C",
+    "source": "deepseek",
+    "sha256": "6bac455277e80661f0c462559809d24ecd212d604b5690dd43470dc9f2ad0960"
+  },
+  {
+    "task_id": "T04",
+    "image_code": "D",
+    "source": "initial",
+    "sha256": "d5ca1073960ccab3347ee9dcb5f4deb80800c0a0f4fdd8d3dbd887f222be37c5"
+  },
+  {
+    "task_id": "T05",
+    "image_code": "A",
+    "source": "initial",
+    "sha256": "f5e183703b2165482f006ccc6d0d4cbec70818482859ed403db3f7c47e4e7e48"
+  },
+  {
+    "task_id": "T05",
+    "image_code": "B",
+    "source": "gemini",
+    "sha256": "cd91a295cc758879b5c2e2aa267b0158c3501c0e2203c68bbbb0eaeaa09ddd78"
+  },
+  {
+    "task_id": "T05",
+    "image_code": "C",
+    "source": "deepseek",
+    "sha256": "07c4f7c2f0dd03a50f60ea4f92172cfc83d9d1df8645253b79504c898900d95b"
+  },
+  {
+    "task_id": "T05",
+    "image_code": "D",
+    "source": "gpt",
+    "sha256": "f8de67d1edb52ad3ca8f85b9ed12beeb850b5405844fb86b511663ca1c32986a"
+  },
+  {
+    "task_id": "T06",
+    "image_code": "A",
+    "source": "deepseek",
+    "sha256": "9129649c0a8c74b9c65b4689df15d2ed12d1431764dbf39d6f05bef6b487db79"
+  },
+  {
+    "task_id": "T06",
+    "image_code": "B",
+    "source": "gemini",
+    "sha256": "f9e2fea25fe61905c5a915906cbf99cb1865452d0a538456fc0d277e9e6f8265"
+  },
+  {
+    "task_id": "T06",
+    "image_code": "D",
+    "source": "initial",
+    "sha256": "2b34f13298011c788becda8b5b7a16115a4bbf3c54ce1e2bb3b10fd845f60691"
+  },
+  {
+    "task_id": "T07",
+    "image_code": "A",
+    "source": "gemini",
+    "sha256": "8dd2a8537823ecdb158bc9f7b5e6b0b0b8d3f4e4fe948b3ec103506bfc086d2d"
+  },
+  {
+    "task_id": "T07",
+    "image_code": "B",
+    "source": "initial",
+    "sha256": "1ad10f03bbfebc9385037999169d354062809b38e4cbbed75be83f65a9f65996"
+  },
+  {
+    "task_id": "T07",
+    "image_code": "C",
+    "source": "gpt",
+    "sha256": "7eb84a487957a4eed3b25b9b008b002d1d25ea26093a9d9c8b4ce5beb5a38a97"
+  },
+  {
+    "task_id": "T07",
+    "image_code": "D",
+    "source": "deepseek",
+    "sha256": "fb8eeccc0786862285dc0090efba540670776d1465c4b32c19133a9b04bd5032"
+  },
+  {
+    "task_id": "T08",
+    "image_code": "A",
+    "source": "gpt",
+    "sha256": "0e69ce937518d76c82ee4f0b1dd0381959b83adc71011a13917edcaa688c5e66"
+  },
+  {
+    "task_id": "T08",
+    "image_code": "B",
+    "source": "initial",
+    "sha256": "e352a3978c45e8b46e698439fe16cd7d1827841dd4eb9c0c04c80519525e2c0d"
+  },
+  {
+    "task_id": "T08",
+    "image_code": "D",
+    "source": "deepseek",
+    "sha256": "7d95bc98a9878454d551c0c49207c32697e7318ad16752a01fd33e69ae34712f"
+  },
+  {
+    "task_id": "T09",
+    "image_code": "A",
+    "source": "gpt",
+    "sha256": "8b8883f3819ae2decbd42068ce85b8c2fd9579ab5b04fa26f12df8f113665860"
+  },
+  {
+    "task_id": "T09",
+    "image_code": "B",
+    "source": "gemini",
+    "sha256": "9b57ac1d29a965e5f84d5e0f053438a132208cf034530e1fb51d1ef728ebda7e"
+  },
+  {
+    "task_id": "T09",
+    "image_code": "C",
+    "source": "initial",
+    "sha256": "6ffcba0bbb4d176c004e2d10bbe2aa6cd9960a0b1022d53bbc49d639dd0f758b"
+  },
+  {
+    "task_id": "T09",
+    "image_code": "D",
+    "source": "deepseek",
+    "sha256": "fc6368f56459db7e8b372a30fa032104c649a69616cc5237025331b81635c2f3"
+  },
+  {
+    "task_id": "T10",
+    "image_code": "A",
+    "source": "initial",
+    "sha256": "fba6f990f0726dba0e9b238f3ef49420a93c94b99f4747284c7acd60647aabf8"
+  },
+  {
+    "task_id": "T10",
+    "image_code": "B",
+    "source": "deepseek",
+    "sha256": "dd6e25fbc2717192e680d015840f586288bce4e3f18cc40d5d6015cac876b837"
+  },
+  {
+    "task_id": "T10",
+    "image_code": "C",
+    "source": "gemini",
+    "sha256": "49d6f4ec434620d9cc0b0e31f52777b53090c8390ff43fbd5e24265d1df9b6e0"
+  },
+  {
+    "task_id": "T10",
+    "image_code": "D",
+    "source": "gpt",
+    "sha256": "52929734c70b21de0843dfc9c32f71fb261664c6b0bc538750ae4c0ac4482f8b"
+  }
+]

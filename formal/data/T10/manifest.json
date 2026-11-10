@@ -1,0 +1,190 @@
+{
+  "task_id": "T10",
+  "dataset": "formal",
+  "fixed_version": "formal-prep-20261108-v1",
+  "mock": false,
+  "started_at": 1794137560.920054,
+  "draw_model": "gemini-3.1-flash-image",
+  "branches": {
+    "gpt": {
+      "model": "gpt-6-sol",
+      "feedback_metadata": {
+        "model": "gpt-6-sol",
+        "usage": {
+          "completion_tokens": 1777,
+          "total_tokens": 17476,
+          "prompt_tokens": 15699,
+          "prompt_tokens_details": {
+            "cached_tokens": 11119
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 474
+          }
+        },
+        "raw_response": "{\"checks\":[{\"id\":\"C1\",\"status\":\"pass\",\"evidence\":\"画面为明显的竖向构图。\"},{\"id\":\"C2\",\"status\":\"pass\",\"evidence\":\"画面下半部中央有一个浅绿色花瓶。\"},{\"id\":\"C3\",\"status\":\"fail\",\"evidence\":\"可见四朵粉色郁金香，超过要求的三朵。\"},{\"id\":\"C4\",\"status\":\"fail\",\"evidence\":\"可见三朵黄色郁金香，超过要求的两朵。\"},{\"id\":\"C5\",\"status\":\"pass\",\"evidence\":\"所有可见郁金香都插在同一个花瓶中。\"},{\"id\":\"C6\",\"status\":\"pass\",\"evidence\":\"花瓶置于白色木质桌面上。\"},{\"id\":\"C7\",\"status\":\"uncertain\",\"evidence\":\"顶部有较大面积淡粉色留白，但画面中部及上半部下方出现货架、花盆等背景元素，整体上半部并非完全干净留白。\"},{\"id\":\"C8\",\"status\":\"pass\",\"evidence\":\"未见人物、品牌标志或可见文字。\"}],\"priority_fixes\":[\"严格控制花朵数量为三朵粉色郁金香和两朵黄色郁金香，移除多余的一朵粉色和一朵黄色郁金香。\",\"将上半部处理为干净、均匀的淡粉色留白背景，移除货架、花盆及其他杂乱背景元素。\"],\"revised_prompt\":\"生成一张竖向花店宣传配图。画面下半部中央有一个浅绿色花瓶，瓶中恰好插着三朵粉色郁金香和两朵黄色郁金香，总共五朵，清晰可数且没有任何多余花朵，所有花朵都插在同一个花瓶内。花瓶位于白色桌面上。背景为均匀的淡粉色，上半部保持大面积干净、无杂物的留白，适合添加标题。不要出现人物、品牌、品牌标志、货架、其他花盆或任何可见文字。\"}"
+      },
+      "feedback_latency_seconds": 34.8,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1520,
+          "promptTokenCount": 121,
+          "totalTokenCount": 1641
+        },
+        "actual_size": [
+          768,
+          1376
+        ]
+      },
+      "draw_latency_seconds": 15.25
+    },
+    "gemini": {
+      "model": "gemini-3.8-flash",
+      "feedback_metadata": {
+        "model": "gemini-3.8-flash",
+        "usage": {
+          "candidatesTokenCount": 491,
+          "promptTokenCount": 1408,
+          "thoughtsTokenCount": 532,
+          "totalTokenCount": 2431
+        },
+        "raw_response": "```json\n{\n  \"checks\": [\n    {\n      \"id\": \"C1\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面为竖向构图。\"\n    },\n    {\n      \"id\": \"C2\",\n      \"status\": \"pass\",\n      \"evidence\": \"下半部中央设有一个浅绿色陶瓷花瓶。\"\n    },\n    {\n      \"id\": \"C3\",\n      \"status\": \"fail\",\n      \"evidence\": \"画面中共有4朵粉色郁金香，而非恰好3朵。\"\n    },\n    {\n      \"id\": \"C4\",\n      \"status\": \"fail\",\n      \"evidence\": \"画面中共有3朵黄色郁金香，而非恰好2朵。\"\n    },\n    {\n      \"id\": \"C5\",\n      \"status\": \"pass\",\n      \"evidence\": \"所有花朵均插在同一只浅绿色花瓶中。\"\n    },\n    {\n      \"id\": \"C6\",\n      \"status\": \"pass\",\n      \"evidence\": \"花瓶放置在白色木质桌面上。\"\n    },\n    {\n      \"id\": \"C7\",\n      \"status\": \"pass\",\n      \"evidence\": \"顶部留有大面积淡粉色空白背景。\"\n    },\n    {\n      \"id\": \"C8\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面无人物、品牌或文字标识。\"\n    }\n  ],\n  \"priority_fixes\": [\n    \"将粉色郁金香数量严格控制为恰好3朵。\",\n    \"将黄色郁金香数量严格控制为恰好2朵。\"\n  ],\n  \"revised_prompt\": \"生成一张竖向花店宣传配图。画面下半部有一个浅绿色花瓶，瓶中严格只插有5朵郁金香：恰好三朵粉色郁金香和恰好两朵黄色郁金香。花瓶放置在干净的白色桌面上，背景为统一淡粉色，上半部保留大面积纯净留白以便排版。无人物、无文字、无品牌logo。\"\n}\n```"
+      },
+      "feedback_latency_seconds": 20.77,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1507,
+          "promptTokenCount": 92,
+          "totalTokenCount": 1599
+        },
+        "actual_size": [
+          768,
+          1376
+        ]
+      },
+      "draw_latency_seconds": 14.17
+    },
+    "deepseek": {
+      "model": "deepseek-flash",
+      "feedback_metadata": {
+        "model": "deepseek-flash",
+        "usage": {
+          "prompt_tokens": 988,
+          "completion_tokens": 2238,
+          "total_tokens": 3226,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1787
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 988
+        },
+        "raw_response": "{\n  \"checks\": [\n    {\n      \"id\": \"C1\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面为明显的竖向长图构图。\"\n    },\n    {\n      \"id\": \"C2\",\n      \"status\": \"pass\",\n      \"evidence\": \"浅绿色花瓶位于画面下半部。\"\n    },\n    {\n      \"id\": \"C3\",\n      \"status\": \"fail\",\n      \"evidence\": \"可见四朵粉色郁金香，不是恰好三朵。\"\n    },\n    {\n      \"id\": \"C4\",\n      \"status\": \"fail\",\n      \"evidence\": \"可见至少三朵黄色郁金香，右后方仍有一朵黄色花苞，不是恰好两朵。\"\n    },\n    {\n      \"id\": \"C5\",\n      \"status\": \"pass\",\n      \"evidence\": \"所有花茎都插入同一个浅绿色花瓶中。\"\n    },\n    {\n      \"id\": \"C6\",\n      \"status\": \"pass\",\n      \"evidence\": \"花瓶放置在白色木质桌面上。\"\n    },\n    {\n      \"id\": \"C7\",\n      \"status\": \"pass\",\n      \"evidence\": \"背景为淡粉色，画面上半部有大面积留白，适合添加标题。\"\n    },\n    {\n      \"id\": \"C8\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面中没有人、品牌标志或可见文字。\"\n    }\n  ],\n  \"priority_fixes\": [\n    \"将粉色郁金香减少到恰好三朵，移除画面中多余的一朵粉色郁金香。\",\n    \"将黄色郁金香控制为恰好两朵，移除右后方多余的黄色花苞。\"\n  ],\n  \"revised_prompt\": \"生成一张竖向花店宣传配图。画面下半部有一个浅绿色花瓶，瓶中恰好只插着三朵粉色郁金香和两朵黄色郁金香，花朵清晰可数，不出现额外花朵或花苞。花瓶位于白色桌面上，背景为淡粉色；上半部留出适合添加标题的空白。不要出现人物、品牌或文字。\"\n}"
+      },
+      "feedback_latency_seconds": 19.93,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1558,
+          "promptTokenCount": 89,
+          "totalTokenCount": 1647
+        },
+        "actual_size": [
+          768,
+          1376
+        ]
+      },
+      "draw_latency_seconds": 16.04
+    }
+  },
+  "requested_image_size": "1024x1024",
+  "draw_calls": 4,
+  "attempts": [
+    {
+      "kind": "draw",
+      "branch": "initial",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794137560.920058,
+      "success": true,
+      "latency_seconds": 14.78,
+      "finished_at": 1794137575.7023501
+    },
+    {
+      "kind": "feedback",
+      "branch": "gpt",
+      "model": "gpt-6-sol",
+      "started_at": 1794137575.703383,
+      "success": true,
+      "latency_seconds": 34.8,
+      "finished_at": 1794137610.506609
+    },
+    {
+      "kind": "draw",
+      "branch": "gpt",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794137610.507154,
+      "success": true,
+      "latency_seconds": 15.25,
+      "finished_at": 1794137625.7587159
+    },
+    {
+      "kind": "feedback",
+      "branch": "gemini",
+      "model": "gemini-3.8-flash",
+      "started_at": 1794137625.761857,
+      "success": true,
+      "latency_seconds": 20.77,
+      "finished_at": 1794137646.5325289
+    },
+    {
+      "kind": "draw",
+      "branch": "gemini",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794137646.533727,
+      "success": true,
+      "latency_seconds": 14.16,
+      "finished_at": 1794137660.698556
+    },
+    {
+      "kind": "feedback",
+      "branch": "deepseek",
+      "model": "deepseek-flash",
+      "started_at": 1794137660.7019079,
+      "success": true,
+      "latency_seconds": 19.93,
+      "finished_at": 1794137680.628801
+    },
+    {
+      "kind": "draw",
+      "branch": "deepseek",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794137680.6295838,
+      "success": true,
+      "latency_seconds": 16.04,
+      "finished_at": 1794137696.6688929
+    }
+  ],
+  "initial": {
+    "metadata": {
+      "model": "gemini-3.1-flash-image",
+      "usage": {
+        "candidatesTokenCount": 1527,
+        "promptTokenCount": 73,
+        "totalTokenCount": 1600
+      },
+      "actual_size": [
+        768,
+        1376
+      ]
+    },
+    "latency_seconds": 14.78
+  },
+  "actual_image_size": [
+    768,
+    1376
+  ],
+  "finished_at": 1794137696.6698282
+}

@@ -1,0 +1,190 @@
+{
+  "task_id": "T09",
+  "dataset": "formal",
+  "fixed_version": "formal-prep-20261108-v1",
+  "mock": false,
+  "started_at": 1794137434.6200929,
+  "draw_model": "gemini-3.1-flash-image",
+  "branches": {
+    "gpt": {
+      "model": "gpt-6-sol",
+      "feedback_metadata": {
+        "model": "gpt-6-sol",
+        "usage": {
+          "completion_tokens": 781,
+          "total_tokens": 2383,
+          "prompt_tokens": 1602,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 271
+          }
+        },
+        "raw_response": "{\n  \"checks\": [\n    {\n      \"id\": \"C1\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面中恰好有两只白色跑鞋。\"\n    },\n    {\n      \"id\": \"C2\",\n      \"status\": \"pass\",\n      \"evidence\": \"鞋子放在浅灰色地面上。\"\n    },\n    {\n      \"id\": \"C3\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面中只有一只蓝色水壶。\"\n    },\n    {\n      \"id\": \"C4\",\n      \"status\": \"uncertain\",\n      \"evidence\": \"水壶在鞋子右侧，但两者的前后位置不明显，无法确认水壶位于鞋子前方。\"\n    },\n    {\n      \"id\": \"C5\",\n      \"status\": \"pass\",\n      \"evidence\": \"橙色毛巾位于水壶右侧。\"\n    },\n    {\n      \"id\": \"C6\",\n      \"status\": \"pass\",\n      \"evidence\": \"两只鞋、水壶和毛巾均完整显示，未被画面边缘裁切。\"\n    },\n    {\n      \"id\": \"C7\",\n      \"status\": \"pass\",\n      \"evidence\": \"背景大体为白色，左上方留有空白。\"\n    },\n    {\n      \"id\": \"C8\",\n      \"status\": \"fail\",\n      \"evidence\": \"没有人物，但水壶上可见品牌及刻度文字。\"\n    }\n  ],\n  \"priority_fixes\": [\n    \"将水壶明确放在两只鞋的前方，使前后层次清晰。\",\n    \"去除水壶及其他物品上的所有文字、标识和刻度。\"\n  ],\n  \"revised_prompt\": \"生成一张运动装备展示图。浅灰地面上恰好有一双两只白色跑鞋；鞋子前方明确放置一只蓝色水壶，水壶右侧放一条橙色毛巾。背景为纯白色，左上方留白。所有物品完整可见，不要出现人物或任何可见文字、标识及刻度。\"\n}"
+      },
+      "feedback_latency_seconds": 25.61,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1526,
+          "promptTokenCount": 71,
+          "totalTokenCount": 1597
+        },
+        "actual_size": [
+          1408,
+          768
+        ]
+      },
+      "draw_latency_seconds": 15.82
+    },
+    "gemini": {
+      "model": "gemini-3.8-flash",
+      "feedback_metadata": {
+        "model": "gemini-3.8-flash",
+        "usage": {
+          "candidatesTokenCount": 399,
+          "promptTokenCount": 1369,
+          "thoughtsTokenCount": 367,
+          "totalTokenCount": 2135
+        },
+        "raw_response": "```json\n{\n  \"checks\": [\n    {\"id\": \"C1\", \"status\": \"pass\", \"evidence\": \"画面中有且仅有一双白色跑鞋。\"},\n    {\"id\": \"C2\", \"status\": \"pass\", \"evidence\": \"跑鞋置于浅灰色地面上。\"},\n    {\"id\": \"C3\", \"status\": \"pass\", \"evidence\": \"仅有一只蓝色水壶。\"},\n    {\"id\": \"C4\", \"status\": \"fail\", \"evidence\": \"水壶位于跑鞋右侧而非正前方。\"},\n    {\"id\": \"C5\", \"status\": \"pass\", \"evidence\": \"橙色毛巾位于水壶右侧。\"},\n    {\"id\": \"C6\", \"status\": \"pass\", \"evidence\": \"所有物品完整显示无遮挡裁切。\"},\n    {\"id\": \"C7\", \"status\": \"pass\", \"evidence\": \"背景为纯白墙面且左上方有充足留白。\"},\n    {\"id\": \"C8\", \"status\": \"fail\", \"evidence\": \"水壶瓶身印有品牌标识与容量刻度文字。\"}\n  ],\n  \"priority_fixes\": [\n    \"将蓝色水壶放置在白色跑鞋的正前方，而非右侧并排。\",\n    \"去除水壶表面及跑鞋上的所有品牌商标、刻度及文字。\"\n  ],\n  \"revised_prompt\": \"运动装备展示图，无人物，无任何文字或商标。纯白色背景，左上方大面积留白。浅灰水泥地面上，后方放置一双白色跑鞋，跑鞋的正前方放置一只纯净无图案文字的蓝色水壶，水壶右侧平整叠放一条橙色毛巾，所有物品完整清晰可见。\"\n}\n```"
+      },
+      "feedback_latency_seconds": 19.7,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1541,
+          "promptTokenCount": 77,
+          "totalTokenCount": 1618
+        },
+        "actual_size": [
+          1408,
+          768
+        ]
+      },
+      "draw_latency_seconds": 18.12
+    },
+    "deepseek": {
+      "model": "deepseek-flash",
+      "feedback_metadata": {
+        "model": "deepseek-flash",
+        "usage": {
+          "prompt_tokens": 976,
+          "completion_tokens": 1997,
+          "total_tokens": 2973,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1523
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 976
+        },
+        "raw_response": "{\n  \"checks\": [\n    {\n      \"id\": \"C1\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面中恰好可见两只并排的白色跑鞋，没有多余鞋只。\"\n    },\n    {\n      \"id\": \"C2\",\n      \"status\": \"pass\",\n      \"evidence\": \"两只鞋都落在浅灰色地面上。\"\n    },\n    {\n      \"id\": \"C3\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面中仅有一只蓝色水壶。\"\n    },\n    {\n      \"id\": \"C4\",\n      \"status\": \"uncertain\",\n      \"evidence\": \"蓝色水壶主要位于鞋子右侧，壶底略低于鞋底，但没有明确呈现为鞋子正前方。\"\n    },\n    {\n      \"id\": \"C5\",\n      \"status\": \"pass\",\n      \"evidence\": \"橙色毛巾位于蓝色水壶右侧。\"\n    },\n    {\n      \"id\": \"C6\",\n      \"status\": \"pass\",\n      \"evidence\": \"跑鞋、水壶和毛巾均完整出现在画面内，没有被裁切。\"\n    },\n    {\n      \"id\": \"C7\",\n      \"status\": \"pass\",\n      \"evidence\": \"背景为白色或近白色，左上方有大面积留白。\"\n    },\n    {\n      \"id\": \"C8\",\n      \"status\": \"fail\",\n      \"evidence\": \"画面中没有人物，但水壶上有可见的“CAMELBAK”“750ml”等文字和刻度，鞋面上也有可见标签文字。\"\n    }\n  ],\n  \"priority_fixes\": [\n    \"移除水壶及鞋面上的品牌、刻度、标签等所有可见文字或标识。\",\n    \"将蓝色水壶调整到鞋子正前方；当前它更像位于鞋子右侧。\"\n  ],\n  \"revised_prompt\": \"生成一张运动装备展示图。浅灰地面上恰好有一双白色跑鞋，鞋子正前方是一只蓝色水壶，水壶右侧是一条橙色毛巾。背景为纯白色，所有物品完整可见，左上方留白。画面中不要出现人物，也不要在水壶、鞋子、毛巾或背景上出现品牌标识、标签、刻度、字母或任何可见文字。\"\n}"
+      },
+      "feedback_latency_seconds": 17.25,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1493,
+          "promptTokenCount": 90,
+          "totalTokenCount": 1583
+        },
+        "actual_size": [
+          1408,
+          768
+        ]
+      },
+      "draw_latency_seconds": 14.18
+    }
+  },
+  "requested_image_size": "1024x1024",
+  "draw_calls": 4,
+  "attempts": [
+    {
+      "kind": "draw",
+      "branch": "initial",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794137434.620097,
+      "success": true,
+      "latency_seconds": 15.61,
+      "finished_at": 1794137450.227027
+    },
+    {
+      "kind": "feedback",
+      "branch": "gpt",
+      "model": "gpt-6-sol",
+      "started_at": 1794137450.228483,
+      "success": true,
+      "latency_seconds": 25.61,
+      "finished_at": 1794137475.840215
+    },
+    {
+      "kind": "draw",
+      "branch": "gpt",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794137475.841312,
+      "success": true,
+      "latency_seconds": 15.82,
+      "finished_at": 1794137491.66493
+    },
+    {
+      "kind": "feedback",
+      "branch": "gemini",
+      "model": "gemini-3.8-flash",
+      "started_at": 1794137491.666008,
+      "success": true,
+      "latency_seconds": 19.7,
+      "finished_at": 1794137511.363913
+    },
+    {
+      "kind": "draw",
+      "branch": "gemini",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794137511.3649201,
+      "success": true,
+      "latency_seconds": 18.12,
+      "finished_at": 1794137529.487006
+    },
+    {
+      "kind": "feedback",
+      "branch": "deepseek",
+      "model": "deepseek-flash",
+      "started_at": 1794137529.48811,
+      "success": true,
+      "latency_seconds": 17.25,
+      "finished_at": 1794137546.737338
+    },
+    {
+      "kind": "draw",
+      "branch": "deepseek",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794137546.738383,
+      "success": true,
+      "latency_seconds": 14.18,
+      "finished_at": 1794137560.9173892
+    }
+  ],
+  "initial": {
+    "metadata": {
+      "model": "gemini-3.1-flash-image",
+      "usage": {
+        "candidatesTokenCount": 1535,
+        "promptTokenCount": 61,
+        "totalTokenCount": 1596
+      },
+      "actual_size": [
+        1408,
+        768
+      ]
+    },
+    "latency_seconds": 15.61
+  },
+  "actual_image_size": [
+    1408,
+    768
+  ],
+  "finished_at": 1794137560.918132
+}

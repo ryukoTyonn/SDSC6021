@@ -1,0 +1,46 @@
+{
+  "checks": [
+    {
+      "id": "C1",
+      "status": "pass",
+      "evidence": "横向构图的扁平矢量风格插画。"
+    },
+    {
+      "id": "C2",
+      "status": "pass",
+      "evidence": "草地上仅有一顶橙色帐篷。"
+    },
+    {
+      "id": "C3",
+      "status": "pass",
+      "evidence": "帐篷右侧整齐摆放着两把折叠椅。"
+    },
+    {
+      "id": "C4",
+      "status": "pass",
+      "evidence": "右侧第一把折叠椅为蓝色。"
+    },
+    {
+      "id": "C5",
+      "status": "pass",
+      "evidence": "右侧第二把折叠椅为黄色。"
+    },
+    {
+      "id": "C6",
+      "status": "pass",
+      "evidence": "帐篷正后方矗立着三棵主要松树。"
+    },
+    {
+      "id": "C7",
+      "status": "pass",
+      "evidence": "天空为浅蓝色，左上角无遮挡留白。"
+    },
+    {
+      "id": "C8",
+      "status": "pass",
+      "evidence": "画面中未出现任何人物或文字。"
+    }
+  ],
+  "priority_fixes": [],
+  "revised_prompt": "横向扁平插画：广阔草地上有一顶橙色帐篷，帐篷右侧放置两把折叠椅，分别为蓝色和黄色。帐篷后方矗立三棵高大的松树。天空呈浅蓝色，左上角大面积留白，无人物及文字。"
+}

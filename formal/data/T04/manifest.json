@@ -1,0 +1,190 @@
+{
+  "task_id": "T04",
+  "dataset": "formal",
+  "fixed_version": "formal-prep-20261108-v1",
+  "mock": false,
+  "started_at": 1794136894.271263,
+  "draw_model": "gemini-3.1-flash-image",
+  "branches": {
+    "gpt": {
+      "model": "gpt-6-sol",
+      "feedback_metadata": {
+        "model": "gpt-6-sol",
+        "usage": {
+          "completion_tokens": 1858,
+          "total_tokens": 19480,
+          "prompt_tokens": 17622,
+          "prompt_tokens_details": {
+            "cached_tokens": 12500
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 346
+          }
+        },
+        "raw_response": "{\n  \"checks\": [\n    {\n      \"id\": \"C1\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面为横向构图，采用扁平插画风格。\"\n    },\n    {\n      \"id\": \"C2\",\n      \"status\": \"pass\",\n      \"evidence\": \"草地上可见一顶橙色帐篷。\"\n    },\n    {\n      \"id\": \"C3\",\n      \"status\": \"pass\",\n      \"evidence\": \"帐篷右侧有两把折叠椅。\"\n    },\n    {\n      \"id\": \"C4\",\n      \"status\": \"pass\",\n      \"evidence\": \"其中一把椅子为蓝色。\"\n    },\n    {\n      \"id\": \"C5\",\n      \"status\": \"pass\",\n      \"evidence\": \"另一把椅子为黄色。\"\n    },\n    {\n      \"id\": \"C6\",\n      \"status\": \"fail\",\n      \"evidence\": \"帐篷后方可见三棵较大的松树，但远处山脊和画面边缘还有许多松树，因此画面中的松树不止三棵。\"\n    },\n    {\n      \"id\": \"C7\",\n      \"status\": \"pass\",\n      \"evidence\": \"天空为浅蓝色，左上方主要是天空，留有较大空白区域。\"\n    },\n    {\n      \"id\": \"C8\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面中没有人物或可见文字。\"\n    }\n  ],\n  \"priority_fixes\": [\n    \"将松树总数限定为恰好三棵，并移除远景山脊及画面边缘的其他松树。\"\n  ],\n  \"revised_prompt\": \"生成一张横向扁平插画：草地上有一顶橙色帐篷，帐篷右侧恰好两把折叠椅，一把蓝色、一把黄色。帐篷后方恰好有三棵松树，画面中不要出现其他松树，包括远景山脊和边缘处。天空浅蓝色，画面左上角保持空白，不要出现人物或文字。\"\n}"
+      },
+      "feedback_latency_seconds": 18.13,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1491,
+          "promptTokenCount": 83,
+          "totalTokenCount": 1574
+        },
+        "actual_size": [
+          1584,
+          672
+        ]
+      },
+      "draw_latency_seconds": 15.26
+    },
+    "gemini": {
+      "model": "gemini-3.8-flash",
+      "feedback_metadata": {
+        "model": "gemini-3.8-flash",
+        "usage": {
+          "candidatesTokenCount": 425,
+          "promptTokenCount": 1395,
+          "thoughtsTokenCount": 436,
+          "totalTokenCount": 2256
+        },
+        "raw_response": "```json\n{\n  \"checks\": [\n    {\n      \"id\": \"C1\",\n      \"status\": \"pass\",\n      \"evidence\": \"横向构图的扁平矢量风格插画。\"\n    },\n    {\n      \"id\": \"C2\",\n      \"status\": \"pass\",\n      \"evidence\": \"草地上仅有一顶橙色帐篷。\"\n    },\n    {\n      \"id\": \"C3\",\n      \"status\": \"pass\",\n      \"evidence\": \"帐篷右侧整齐摆放着两把折叠椅。\"\n    },\n    {\n      \"id\": \"C4\",\n      \"status\": \"pass\",\n      \"evidence\": \"右侧第一把折叠椅为蓝色。\"\n    },\n    {\n      \"id\": \"C5\",\n      \"status\": \"pass\",\n      \"evidence\": \"右侧第二把折叠椅为黄色。\"\n    },\n    {\n      \"id\": \"C6\",\n      \"status\": \"pass\",\n      \"evidence\": \"帐篷正后方矗立着三棵主要松树。\"\n    },\n    {\n      \"id\": \"C7\",\n      \"status\": \"pass\",\n      \"evidence\": \"天空为浅蓝色，左上角无遮挡留白。\"\n    },\n    {\n      \"id\": \"C8\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面中未出现任何人物或文字。\"\n    }\n  ],\n  \"priority_fixes\": [],\n  \"revised_prompt\": \"横向扁平插画：广阔草地上有一顶橙色帐篷，帐篷右侧放置两把折叠椅，分别为蓝色和黄色。帐篷后方矗立三棵高大的松树。天空呈浅蓝色，左上角大面积留白，无人物及文字。\"\n}\n```"
+      },
+      "feedback_latency_seconds": 19.94,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1522,
+          "promptTokenCount": 66,
+          "totalTokenCount": 1588
+        },
+        "actual_size": [
+          1376,
+          768
+        ]
+      },
+      "draw_latency_seconds": 12.87
+    },
+    "deepseek": {
+      "model": "deepseek-flash",
+      "feedback_metadata": {
+        "model": "deepseek-flash",
+        "usage": {
+          "prompt_tokens": 955,
+          "completion_tokens": 913,
+          "total_tokens": 1868,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 664
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 955
+        },
+        "raw_response": "{\"checks\":[{\"id\":\"C1\",\"status\":\"pass\",\"evidence\":\"画面为横向宽幅构图，呈现扁平矢量插画风格。\"},{\"id\":\"C2\",\"status\":\"pass\",\"evidence\":\"画面中只有一顶橙色帐篷。\"},{\"id\":\"C3\",\"status\":\"pass\",\"evidence\":\"帐篷右侧有两把折叠椅。\"},{\"id\":\"C4\",\"status\":\"pass\",\"evidence\":\"其中左侧的椅子为蓝色。\"},{\"id\":\"C5\",\"status\":\"pass\",\"evidence\":\"另一把右侧的椅子为黄色。\"},{\"id\":\"C6\",\"status\":\"pass\",\"evidence\":\"帐篷后方及右侧可见三棵高大的松树，没有额外同类松树。\"},{\"id\":\"C7\",\"status\":\"pass\",\"evidence\":\"天空为浅蓝色，画面左上角区域保持空白，没有物体遮挡。\"},{\"id\":\"C8\",\"status\":\"pass\",\"evidence\":\"画面中没有人物，也没有可见文字。\"}],\"priority_fixes\":[],\"revised_prompt\":\"生成一张横向扁平插画：草地上有一顶橙色帐篷，帐篷右侧恰好两把折叠椅，一把蓝色、一把黄色。帐篷后方有三棵松树。天空浅蓝色，画面左上角保持空白，不要出现人物或文字。\"}"
+      },
+      "feedback_latency_seconds": 8.93,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1524,
+          "promptTokenCount": 64,
+          "totalTokenCount": 1588
+        },
+        "actual_size": [
+          1376,
+          768
+        ]
+      },
+      "draw_latency_seconds": 14.14
+    }
+  },
+  "requested_image_size": "1024x1024",
+  "draw_calls": 4,
+  "attempts": [
+    {
+      "kind": "draw",
+      "branch": "initial",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794136894.2712681,
+      "success": true,
+      "latency_seconds": 16.97,
+      "finished_at": 1794136911.2408278
+    },
+    {
+      "kind": "feedback",
+      "branch": "gpt",
+      "model": "gpt-6-sol",
+      "started_at": 1794136911.241746,
+      "success": true,
+      "latency_seconds": 18.13,
+      "finished_at": 1794136929.374047
+    },
+    {
+      "kind": "draw",
+      "branch": "gpt",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794136929.3748171,
+      "success": true,
+      "latency_seconds": 15.26,
+      "finished_at": 1794136944.635998
+    },
+    {
+      "kind": "feedback",
+      "branch": "gemini",
+      "model": "gemini-3.8-flash",
+      "started_at": 1794136944.63921,
+      "success": true,
+      "latency_seconds": 19.94,
+      "finished_at": 1794136964.578657
+    },
+    {
+      "kind": "draw",
+      "branch": "gemini",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794136964.579201,
+      "success": true,
+      "latency_seconds": 12.86,
+      "finished_at": 1794136977.4439511
+    },
+    {
+      "kind": "feedback",
+      "branch": "deepseek",
+      "model": "deepseek-flash",
+      "started_at": 1794136977.445132,
+      "success": true,
+      "latency_seconds": 8.93,
+      "finished_at": 1794136986.3787
+    },
+    {
+      "kind": "draw",
+      "branch": "deepseek",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794136986.379667,
+      "success": true,
+      "latency_seconds": 14.14,
+      "finished_at": 1794137000.5201678
+    }
+  ],
+  "initial": {
+    "metadata": {
+      "model": "gemini-3.1-flash-image",
+      "usage": {
+        "candidatesTokenCount": 1517,
+        "promptTokenCount": 64,
+        "totalTokenCount": 1581
+      },
+      "actual_size": [
+        1376,
+        768
+      ]
+    },
+    "latency_seconds": 16.97
+  },
+  "actual_image_size": [
+    1376,
+    768
+  ],
+  "finished_at": 1794137000.520826
+}

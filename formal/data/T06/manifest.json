@@ -1,0 +1,164 @@
+{
+  "task_id": "T06",
+  "dataset": "formal",
+  "fixed_version": "formal-prep-20261108-v1",
+  "mock": false,
+  "started_at": 1794137100.454659,
+  "draw_model": "gemini-3.1-flash-image",
+  "branches": {
+    "gpt": {
+      "model": "gpt-6-sol",
+      "error": "缺少新提示词"
+    },
+    "gemini": {
+      "model": "gemini-3.8-flash",
+      "feedback_metadata": {
+        "model": "gemini-3.8-flash",
+        "usage": {
+          "candidatesTokenCount": 394,
+          "promptTokenCount": 1357,
+          "thoughtsTokenCount": 336,
+          "totalTokenCount": 2087
+        },
+        "raw_response": "```json\n{\n  \"checks\": [\n    {\n      \"id\": \"C1\",\n      \"status\": \"pass\",\n      \"evidence\": \"顶部垂直俯拍视角。\"\n    },\n    {\n      \"id\": \"C2\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面中央展开着一本笔记本。\"\n    },\n    {\n      \"id\": \"C3\",\n      \"status\": \"pass\",\n      \"evidence\": \"展开的页面纯净无书写痕迹。\"\n    },\n    {\n      \"id\": \"C4\",\n      \"status\": \"pass\",\n      \"evidence\": \"笔记本左侧摆放黑色钢笔。\"\n    },\n    {\n      \"id\": \"C5\",\n      \"status\": \"pass\",\n      \"evidence\": \"笔记本右侧为蓝色头戴式耳机。\"\n    },\n    {\n      \"id\": \"C6\",\n      \"status\": \"pass\",\n      \"evidence\": \"右上角有带拉花的咖啡杯。\"\n    },\n    {\n      \"id\": \"C7\",\n      \"status\": \"pass\",\n      \"evidence\": \"桌面材质为浅色木质纹理。\"\n    },\n    {\n      \"id\": \"C8\",\n      \"status\": \"pass\",\n      \"evidence\": \"无手部、人物及文字元素。\"\n    }\n  ],\n  \"priority_fixes\": [],\n  \"revised_prompt\": \"生成一张俯视办公桌配图。桌面中央是一本打开的空白笔记本，笔记本左侧是一支黑色钢笔，右侧是一副蓝色耳机。桌面为浅木色，右上角有一杯咖啡。不要出现手、人物或任何可读文字。\"\n}\n```"
+      },
+      "feedback_latency_seconds": 19.91,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1525,
+          "promptTokenCount": 58,
+          "totalTokenCount": 1583
+        },
+        "actual_size": [
+          1408,
+          768
+        ]
+      },
+      "draw_latency_seconds": 18.87
+    },
+    "deepseek": {
+      "model": "deepseek-flash",
+      "feedback_metadata": {
+        "model": "deepseek-flash",
+        "usage": {
+          "prompt_tokens": 973,
+          "completion_tokens": 830,
+          "total_tokens": 1803,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 579
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 973
+        },
+        "raw_response": "{\"checks\":[{\"id\":\"C1\",\"status\":\"pass\",\"evidence\":\"画面采用俯视角度，桌面和物品均以上方视角呈现。\"},{\"id\":\"C2\",\"status\":\"pass\",\"evidence\":\"一本打开的笔记本位于桌面中央区域。\"},{\"id\":\"C3\",\"status\":\"pass\",\"evidence\":\"笔记本左右页面均为空白，没有书写内容。\"},{\"id\":\"C4\",\"status\":\"pass\",\"evidence\":\"笔记本左侧放着一支黑色钢笔。\"},{\"id\":\"C5\",\"status\":\"pass\",\"evidence\":\"笔记本右侧放着一副蓝色头戴式耳机。\"},{\"id\":\"C6\",\"status\":\"pass\",\"evidence\":\"右上角有一杯咖啡，杯中有拉花。\"},{\"id\":\"C7\",\"status\":\"pass\",\"evidence\":\"桌面整体为浅木色木纹表面。\"},{\"id\":\"C8\",\"status\":\"pass\",\"evidence\":\"画面中没有手、人物，也没有可读文字。\"}],\"priority_fixes\":[],\"revised_prompt\":\"生成一张俯视办公桌配图。桌面中央是一本打开的空白笔记本，笔记本左侧是一支黑色钢笔，右侧是一副蓝色耳机。桌面为浅木色，右上角有一杯咖啡。不要出现手、人物或任何可读文字。\"}"
+      },
+      "feedback_latency_seconds": 10.04,
+      "draw_metadata": {
+        "model": "gemini-3.1-flash-image",
+        "usage": {
+          "candidatesTokenCount": 1561,
+          "promptTokenCount": 58,
+          "totalTokenCount": 1619
+        },
+        "actual_size": [
+          1408,
+          768
+        ]
+      },
+      "draw_latency_seconds": 15.23
+    }
+  },
+  "requested_image_size": "1024x1024",
+  "draw_calls": 3,
+  "attempts": [
+    {
+      "kind": "draw",
+      "branch": "initial",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794137100.454664,
+      "success": true,
+      "latency_seconds": 14.73,
+      "finished_at": 1794137115.185793
+    },
+    {
+      "kind": "feedback",
+      "branch": "gpt",
+      "model": "gpt-6-sol",
+      "started_at": 1794137115.187233,
+      "success": false,
+      "error": "缺少新提示词",
+      "latency_seconds": 11.37,
+      "finished_at": 1794137126.55406
+    },
+    {
+      "kind": "feedback",
+      "branch": "gpt",
+      "model": "gpt-6-sol",
+      "started_at": 1794137126.554471,
+      "success": false,
+      "error": "缺少新提示词",
+      "latency_seconds": 10.6,
+      "finished_at": 1794137137.1513689
+    },
+    {
+      "kind": "feedback",
+      "branch": "gemini",
+      "model": "gemini-3.8-flash",
+      "started_at": 1794137137.1533408,
+      "success": true,
+      "latency_seconds": 19.91,
+      "finished_at": 1794137157.06363
+    },
+    {
+      "kind": "draw",
+      "branch": "gemini",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794137157.065346,
+      "success": true,
+      "latency_seconds": 18.87,
+      "finished_at": 1794137175.937071
+    },
+    {
+      "kind": "feedback",
+      "branch": "deepseek",
+      "model": "deepseek-flash",
+      "started_at": 1794137175.9382799,
+      "success": true,
+      "latency_seconds": 10.04,
+      "finished_at": 1794137185.97555
+    },
+    {
+      "kind": "draw",
+      "branch": "deepseek",
+      "model": "gemini-3.1-flash-image",
+      "started_at": 1794137185.976536,
+      "success": true,
+      "latency_seconds": 15.23,
+      "finished_at": 1794137201.20508
+    }
+  ],
+  "initial": {
+    "metadata": {
+      "model": "gemini-3.1-flash-image",
+      "usage": {
+        "candidatesTokenCount": 1500,
+        "promptTokenCount": 58,
+        "totalTokenCount": 1558
+      },
+      "actual_size": [
+        1408,
+        768
+      ]
+    },
+    "latency_seconds": 14.73
+  },
+  "actual_image_size": [
+    1408,
+    768
+  ],
+  "finished_at": 1794137201.206016
+}

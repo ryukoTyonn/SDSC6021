@@ -1,0 +1,24 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"checks\": [\n    {\n      \"id\": \"C1\",\n      \"status\": \"pass\",\n      \"evidence\": \"横向构图的扁平矢量风格插画。\"\n    },\n    {\n      \"id\": \"C2\",\n      \"status\": \"pass\",\n      \"evidence\": \"草地上仅有一顶橙色帐篷。\"\n    },\n    {\n      \"id\": \"C3\",\n      \"status\": \"pass\",\n      \"evidence\": \"帐篷右侧整齐摆放着两把折叠椅。\"\n    },\n    {\n      \"id\": \"C4\",\n      \"status\": \"pass\",\n      \"evidence\": \"右侧第一把折叠椅为蓝色。\"\n    },\n    {\n      \"id\": \"C5\",\n      \"status\": \"pass\",\n      \"evidence\": \"右侧第二把折叠椅为黄色。\"\n    },\n    {\n      \"id\": \"C6\",\n      \"status\": \"pass\",\n      \"evidence\": \"帐篷正后方矗立着三棵主要松树。\"\n    },\n    {\n      \"id\": \"C7\",\n      \"status\": \"pass\",\n      \"evidence\": \"天空为浅蓝色，左上角无遮挡留白。\"\n    },\n    {\n      \"id\": \"C8\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面中未出现任何人物或文字。\"\n    }\n  ],\n  \"priority_fixes\": [],\n  \"revised_prompt\": \"横向扁平插画：广阔草地上有一顶橙色帐篷，帐篷右侧放置两把折叠椅，分别为蓝色和黄色。帐篷后方矗立三棵高大的松树。天空呈浅蓝色，左上角大面积留白，无人物及文字。\"\n}\n```",
+            "thoughtSignature": "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"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP"
+    }
+  ],
+  "modelVersion": "gemini-3.8-flash",
+  "responseId": "eFvwasXhH4PbytMPzqSNiA4",
+  "usageMetadata": {
+    "candidatesTokenCount": 425,
+    "promptTokenCount": 1395,
+    "thoughtsTokenCount": 436,
+    "totalTokenCount": 2256
+  }
+}

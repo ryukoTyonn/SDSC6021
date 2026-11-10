@@ -1,0 +1,30 @@
+{
+  "id": "resp_0fe6e6b99580adfc016af05b54fc4087d1b7ce96adb5b14604",
+  "object": "chat.completion",
+  "created": 1794136917,
+  "model": "gpt-6-sol",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"checks\": [\n    {\n      \"id\": \"C1\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面为横向构图，采用扁平插画风格。\"\n    },\n    {\n      \"id\": \"C2\",\n      \"status\": \"pass\",\n      \"evidence\": \"草地上可见一顶橙色帐篷。\"\n    },\n    {\n      \"id\": \"C3\",\n      \"status\": \"pass\",\n      \"evidence\": \"帐篷右侧有两把折叠椅。\"\n    },\n    {\n      \"id\": \"C4\",\n      \"status\": \"pass\",\n      \"evidence\": \"其中一把椅子为蓝色。\"\n    },\n    {\n      \"id\": \"C5\",\n      \"status\": \"pass\",\n      \"evidence\": \"另一把椅子为黄色。\"\n    },\n    {\n      \"id\": \"C6\",\n      \"status\": \"fail\",\n      \"evidence\": \"帐篷后方可见三棵较大的松树，但远处山脊和画面边缘还有许多松树，因此画面中的松树不止三棵。\"\n    },\n    {\n      \"id\": \"C7\",\n      \"status\": \"pass\",\n      \"evidence\": \"天空为浅蓝色，左上方主要是天空，留有较大空白区域。\"\n    },\n    {\n      \"id\": \"C8\",\n      \"status\": \"pass\",\n      \"evidence\": \"画面中没有人物或可见文字。\"\n    }\n  ],\n  \"priority_fixes\": [\n    \"将松树总数限定为恰好三棵，并移除远景山脊及画面边缘的其他松树。\"\n  ],\n  \"revised_prompt\": \"生成一张横向扁平插画：草地上有一顶橙色帐篷，帐篷右侧恰好两把折叠椅，一把蓝色、一把黄色。帐篷后方恰好有三棵松树，画面中不要出现其他松树，包括远景山脊和边缘处。天空浅蓝色，画面左上角保持空白，不要出现人物或文字。\"\n}",
+        "reasoning_content": "**Revising tree-count prompt**",
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "native_finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 1858,
+    "total_tokens": 19480,
+    "prompt_tokens": 17622,
+    "prompt_tokens_details": {
+      "cached_tokens": 12500
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 346
+    }
+  }
+}

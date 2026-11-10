@@ -1,0 +1,7 @@
+{
+  "url": "https://api.deepseek.com/chat/completions",
+  "started_at": 1794137286.8862631,
+  "request_sha256": "9ae38d93610e2084cf5503663a6fb76ff518a28ec90aaa8e6a364e1111c6f27a",
+  "http_status": 200,
+  "finished_at": 1794137295.078635
+}

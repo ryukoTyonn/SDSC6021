@@ -1,0 +1,41 @@
+{
+  "model": "gpt-6-sol",
+  "original_requirement": "生成一张简洁的水果静物图。白色桌面上有一个透明玻璃碗，碗内恰好有两个黄色柠檬和一个绿色青苹果；碗左侧放一把银色小勺。背景为淡蓝色，不要出现人物或文字。",
+  "checklist": [
+    {
+      "id": "C1",
+      "text": "一个透明玻璃碗"
+    },
+    {
+      "id": "C2",
+      "text": "碗内恰好两个柠檬"
+    },
+    {
+      "id": "C3",
+      "text": "两个柠檬均为黄色"
+    },
+    {
+      "id": "C4",
+      "text": "碗内恰好一个青苹果"
+    },
+    {
+      "id": "C5",
+      "text": "苹果为绿色"
+    },
+    {
+      "id": "C6",
+      "text": "银色小勺位于碗左侧"
+    },
+    {
+      "id": "C7",
+      "text": "物体置于白色桌面且背景淡蓝"
+    },
+    {
+      "id": "C8",
+      "text": "没有人物或可见文字"
+    }
+  ],
+  "system_instruction": "Inspect the actual image against every checklist item. Return JSON only: checks [{id,status,evidence}], priority_fixes [string], revised_prompt string. status must be pass, fail, or uncertain. Include at most two priority fixes. If all requirements pass, do not invent problems. Preserve all original requirements. Do not invent visual evidence.",
+  "image_path": "../initial.png",
+  "image_sha256": "ef4f3db75ca0e3b3280edc3cbbc21002aef17c4509c614938136e2692ba2b97f"
+}

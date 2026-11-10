@@ -1,0 +1,41 @@
+{
+  "model": "gemini-3.8-flash",
+  "original_requirement": "生成一张宠物用品宣传配图。画面中央是一只棕色小狗，狗的左边有一个蓝色水碗，右边有一个红色玩具球。狗坐在浅色地毯上，背景为室内白墙。画面上方留白，不要出现其他动物或文字。",
+  "checklist": [
+    {
+      "id": "C1",
+      "text": "恰好一只小狗"
+    },
+    {
+      "id": "C2",
+      "text": "小狗主体为棕色"
+    },
+    {
+      "id": "C3",
+      "text": "蓝色水碗在狗左侧"
+    },
+    {
+      "id": "C4",
+      "text": "红色玩具球在狗右侧"
+    },
+    {
+      "id": "C5",
+      "text": "狗呈坐姿"
+    },
+    {
+      "id": "C6",
+      "text": "狗位于浅色地毯上"
+    },
+    {
+      "id": "C7",
+      "text": "背景为室内白墙且上方留白"
+    },
+    {
+      "id": "C8",
+      "text": "没有其他动物或可见文字"
+    }
+  ],
+  "system_instruction": "Inspect the actual image against every checklist item. Return JSON only: checks [{id,status,evidence}], priority_fixes [string], revised_prompt string. status must be pass, fail, or uncertain. Include at most two priority fixes. If all requirements pass, do not invent problems. Preserve all original requirements. Do not invent visual evidence.",
+  "image_path": "../initial.png",
+  "image_sha256": "67107de92986ebdffd7807863c21d05d02e929d2cf45a2777327f93614cf0b7d"
+}

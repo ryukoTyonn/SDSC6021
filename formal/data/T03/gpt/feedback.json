@@ -1,0 +1,46 @@
+{
+  "checks": [
+    {
+      "id": "C1",
+      "status": "pass",
+      "evidence": "画面中只有一只小狗。"
+    },
+    {
+      "id": "C2",
+      "status": "pass",
+      "evidence": "小狗毛色为棕色。"
+    },
+    {
+      "id": "C3",
+      "status": "pass",
+      "evidence": "蓝色水碗位于小狗画面左侧。"
+    },
+    {
+      "id": "C4",
+      "status": "pass",
+      "evidence": "红色玩具球位于小狗画面右侧。"
+    },
+    {
+      "id": "C5",
+      "status": "pass",
+      "evidence": "小狗呈坐姿。"
+    },
+    {
+      "id": "C6",
+      "status": "pass",
+      "evidence": "小狗坐在浅色编织地毯上。"
+    },
+    {
+      "id": "C7",
+      "status": "pass",
+      "evidence": "背景是室内白墙，狗上方有大面积留白。"
+    },
+    {
+      "id": "C8",
+      "status": "pass",
+      "evidence": "画面中没有其他动物或可见文字。"
+    }
+  ],
+  "priority_fixes": [],
+  "revised_prompt": "生成一张宠物用品宣传配图。画面中央是一只棕色小狗，狗的左边有一个蓝色水碗，右边有一个红色玩具球。狗坐在浅色地毯上，背景为室内白墙。画面上方留白，不要出现其他动物或文字。"
+}

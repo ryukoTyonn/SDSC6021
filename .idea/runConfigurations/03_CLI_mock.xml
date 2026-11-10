@@ -1,0 +1,28 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="03 CLI 跑一条（mock）" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="false">
+    <module name="genai_feedback" />
+    <option name="ENV_FILES" value="" />
+    <option name="INTERPRETER_OPTIONS" value="" />
+    <option name="PARENT_ENVS" value="true" />
+    <envs>
+      <env name="PYTHONUNBUFFERED" value="1" />
+      <env name="PYTHONUTF8" value="1" />
+      <env name="NO_PROXY" value="127.0.0.1,localhost" />
+      <env name="no_proxy" value="127.0.0.1,localhost" />
+    </envs>
+    <option name="SDK_HOME" value="" />
+    <option name="SDK_NAME" value="D:\Codes\Project\Conda_Related\conda_env\sdsc6021" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <option name="IS_MODULE_SDK" value="true" />
+    <option name="ADD_CONTENT_ROOTS" value="true" />
+    <option name="ADD_SOURCE_ROOTS" value="true" />
+    <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+    <option name="PARAMETERS" value="--mock --requirement &quot;生成一张横向书店橱窗配图。木质窗台上恰好三本合上的书：左蓝、中绿、右红，书后方一盆小绿植。&quot;" />
+    <option name="SHOW_COMMAND_LINE" value="false" />
+    <option name="EMULATE_TERMINAL" value="false" />
+    <option name="MODULE_MODE" value="false" />
+    <option name="REDIRECT_INPUT" value="false" />
+    <option name="INPUT_FILE" value="" />
+    <method v="2" />
+  </configuration>
+</component>
